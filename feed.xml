@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Jul 2017 01:11:33 -0700</pubDate>
-    <lastBuildDate>Mon, 17 Jul 2017 01:11:33 -0700</lastBuildDate>
+    <pubDate>Mon, 17 Jul 2017 02:21:13 -0700</pubDate>
+    <lastBuildDate>Mon, 17 Jul 2017 02:21:13 -0700</lastBuildDate>
     <generator>Jekyll v3.4.5</generator>
     
       <item>
@@ -45,9 +45,9 @@
 
 &lt;p&gt;In November I competed at &lt;a href=&quot;http://challengepost.com/software/hail-yeah&quot;&gt;Hack Princeton&lt;/a&gt; with my teammates &lt;a href=&quot;http://www.hillwyrough.com/&quot;&gt;Hill&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/tommygibbons46&quot;&gt;Tommy&lt;/a&gt;. We developed an iPhone application that provides users a map of the best nearby intersections to hail a cab in Manhattan. It took home 2nd place in the software track and won the ‘Best Use of MongoDB’ award. Over the holiday break I cleaned up the UI and submitted it to the app store and now it’s live - &lt;a href=&quot;https://itunes.apple.com/us/app/hail-yeah-nyc/id956423920?mt=8&quot;&gt;Hail Yeah!&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/hail-yeah-nyc/id956423920?mt=8&quot;&gt;&lt;img src=&quot;/images/Hail_Yeah_NYC.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Below is the video of me pitching Hail Yeah at the hackathon.&lt;/p&gt;
 
-&lt;p&gt;Here’s the &lt;a href=&quot;https://www.youtube.com/watch?v=5yrhWSTjThY&quot;&gt;video&lt;/a&gt; of me pitching Hail Yeah at the hackathon.&lt;/p&gt;
+&lt;div class=&quot;video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/5yrhWSTjThY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h3&gt;
 
@@ -58,6 +58,8 @@
 &lt;p&gt;When a user sets a location in our app, we use the historical information described above to calculate the frequency of taxi pickups for all intersections within a quarter mile radius of the user’s location given the current day of the week and time of day.&lt;/p&gt;
 
 &lt;p&gt;The resulting information is presented as an intersection heat map, with a color scale at the top for reference.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/hail-yeah-nyc/id956423920?mt=8&quot;&gt;&lt;img src=&quot;/images/Hail_Yeah_NYC.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The app was written in Objective C, it uses google maps, and our intersection database is hosted on Parse.&lt;/p&gt;
 </description>
@@ -74,7 +76,7 @@
     
       <item>
         <title>Visualizing distributed power control</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://bl.ocks.org/renschler/2aa319500f6ec57088ea&quot;&gt;&lt;img src=&quot;/images/DPC.jpg&quot; alt=&quot;Photo&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;div class=&quot;video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/63XOaXwKSwU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
 
 &lt;p&gt;I was working through &lt;a href=&quot;http://www.amazon.com/gp/product/1107024943/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=1107024943&amp;amp;linkCode=as2&amp;amp;tag=455note-20&amp;amp;linkId=GETAOF75SDVA3VO6&quot;&gt;M.Chiang’s Networked Life: 20 Questions and Answers&lt;/a&gt; which is an awesome textbook touching on a wide range of networks topics.&lt;/p&gt;
 
@@ -113,10 +115,10 @@
       </item>
     
       <item>
-        <title>Visualizing commuter flows between US counties</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://gist.github.com/renschler/906685a5f1b1972640e7&quot;&gt;&lt;img src=&quot;/images/radiation.jpg&quot; alt=&quot;Photo&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+        <title>Visualizing simulated commuter flows between US counties</title>
+        <description>&lt;div class=&quot;video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/9C4gU8o6_z0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
 
-&lt;p&gt;** Update (6/20/2017): Github now only allows access to 10 files per Gist, so you’ll need to clone the repository and open index.html in a browser to play with the d3 visualization.&lt;/p&gt;
+&lt;p&gt;** Update (6/20/2017): Github now only allows access to 10 files per Gist, so you’ll need to &lt;a href=&quot;https://gist.github.com/renschler/906685a5f1b1972640e7&quot;&gt;clone the repository&lt;/a&gt; and open index.html in a browser to play with the d3 visualization.&lt;/p&gt;
 
 &lt;p&gt;I created a d3 visualization to explore commuter flows between US counties that were produced by my implementation of &lt;a href=&quot;http://www.nature.com/nature/journal/v484/n7392/abs/nature10856.html&quot;&gt;Simini et al. (2012)’s&lt;/a&gt; radiation model. You can play around with it on &lt;a href=&quot;http://bl.ocks.org/renschler/906685a5f1b1972640e7&quot;&gt;bl.ocks.org&lt;/a&gt;. The selected county appears &lt;span style=&quot;color:red&quot;&gt;red&lt;/span&gt; and you can toggle between commuter flows into and out of the county.&lt;/p&gt;
 
