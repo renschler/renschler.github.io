@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Renschler | Visualizing distributed power control</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/2014/10/26/Visualizing-distributed-power-control-d3.html">
+  <link rel="alternate" type="application/rss+xml" title="Patrick Renschler" href="/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Patrick Renschler</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+  	<h1 style="margin-bottom:0px" class="post_title">Visualizing distributed power control</h1>
+    <p class="post-meta">
+    	Oct 26, 2014
+    	
+    	
+    	 | 
+    		<a  style="color:#828282" class="tag_list_link" href="/tag/d3">d3</a> |
+    	
+    		<a  style="color:#828282" class="tag_list_link" href="/tag/networks">networks</a> |
+    	
+    		<a  style="color:#828282" class="tag_list_link" href="/tag/projects">projects</a> |
+    	
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p><a href="http://bl.ocks.org/renschler/2aa319500f6ec57088ea"><img src="/images/DPC.jpg" alt="Photo" /></a></p>
+
+<p>I was working through <a href="http://www.amazon.com/gp/product/1107024943/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1107024943&amp;linkCode=as2&amp;tag=455note-20&amp;linkId=GETAOF75SDVA3VO6">M.Chiang’s Networked Life: 20 Questions and Answers</a> which is an awesome textbook touching on a wide range of networks topics.</p>
+
+<p>The first chapter, “What makes CDMA work for my smartphone” covers mobile station <a href="http://en.wikipedia.org/wiki/Power_control">power control</a> which plays a crucial role in communication systems in terms of interference management, energy management, and connectivity management. Power control helps address the <a href="http://en.wikipedia.org/wiki/Near-far_problem">near-far problem</a> faced in non-orthogonal wireless systems like <a href="http://en.wikipedia.org/wiki/Code_division_multiple_access">CDMA</a>.</p>
+
+<p>I created a d3 visualization that lets you explore a basic formulation of the distributed power control algorithm (with a fixed signal to interference ratio) over a narrow range of inputs. You can play around with it on <a href="http://bl.ocks.org/renschler/2aa319500f6ec57088ea">bl.ocks.org</a>.</p>
+
+<p>Each receiving channel is assigned a target SIR that is randomly sampled from a uniform distribution with range 1-3. Each mobile station is assigned an initial transmit power level that is randomly sampled from a uniform distribution with range 1-3mW. Gains for interference channels are randomly sampled from a uniform distribution with range 0.01-0.10. These inputs are displayed in tables where each row corresponds to a given mobile station. The input values used here are arbitrary and don’t reflect actual numerical values observed in real cellular networks.</p>
+
+<p>The transmit power of each mobile station is plotted as a line over time (i.e. over the DPC algorithm iterations). If there exists a set of transmit powers that satisfies all target SIRs, the minimal power solution is displayed in a table to the right of the input tables. Otherwise “<span style="color:red">No Solution</span>” is displayed.</p>
+
+<p>Users can:</p>
+
+<ul>
+  <li>alter the seed for the random number generator (this will generate different inputs)</li>
+  <li>set the number of mobile stations (3-9)</li>
+  <li>set the receiver noise (0.1-0.5mW) which is assumed to be the same for all channels</li>
+  <li>set the number of iterations for the DPC algorithm</li>
+</ul>
+
+<p>Source Code: <a href="https://gist.github.com/renschler/2aa319500f6ec57088ea">gist.github.com/renschler</a></p>
+
+<p>Reference: M. Chiang, P. Hande, T. Lan, and C.W. Tan, “Power control for cellular networks”, <em>Foundation and Trends in Networking</em>, vol. 2, no. 4, pp. 381-533, July 2008.</p>
+
+  </article>
+
+  <div class="comments">
+    
+      <div id="disqus_thread"></div>
+      <script>
+          /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+           */
+          /*
+          var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          */
+          (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+              var d = document, s = d.createElement('script');
+              
+              s.src = '//renschler.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+              
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!--<h2 class="footer-heading">Patrick Renschler</h2>-->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>
+            <img width="16px" height="16px" style="border-radius:10%" src="/images/shortwhale_logo.png"/>
+            <a href="http://www.shortwhale.com/p_renschler">
+              <span class="username">email</span>
+            </a>
+          </li>
+
+          
+          <li>
+            <img width="16px" height="16px" style="border-radius:10%" src="/images/Twitter_Logo.png" alt="Twitter"/>
+            <a href="https://twitter.com/p_renschler">
+              <span class="username">@p_renschler</span>
+            </a>
+          </li>
+          
+
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+          <li>
+            <style>
+              .strava-badge- {height: 16px; }
+              .strava-badge- img { visibility: hidden; height: 16px; }
+              .strava-badge-follow { height: 16px; width: 16px; background: url(/images/echelon-sprite-16.png) no-repeat 0 0; }
+            </style>
+            <span class="strava-badge- strava-badge-follow">
+              <img width="16px" height="16px" src="/images/echelon-sprite-16.png" alt="Strava" />
+            </span>
+            <a href="http://strava.com/athletes/10063857/badge">
+              <span class="username">strava</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <img width="16px" height="16px" style="border-radius:10%" src="/images/blockstack.jpg"/>
+            <a href="https://onename.com/renschler">
+              <span class="username">onename</span>
+            </a>
+          </li>
+          
+
+        </ul>
+      </div>
+
+      <!--<div class="footer-col  footer-col-3">
+        <p class="text">Patrick Renschler's blog
+</p>
+      </div>-->
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
