@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Jul 2017 19:24:31 -0700</pubDate>
-    <lastBuildDate>Mon, 17 Jul 2017 19:24:31 -0700</lastBuildDate>
+    <pubDate>Tue, 18 Jul 2017 01:51:02 -0700</pubDate>
+    <lastBuildDate>Tue, 18 Jul 2017 01:51:02 -0700</lastBuildDate>
     <generator>Jekyll v3.4.5</generator>
     
       <item>
@@ -21,7 +21,7 @@
 &lt;p&gt;I wanted to make some tweaks to the minima theme so I followed the instructions here on &lt;a href=&quot;http://jekyllrb.com/docs/themes/#overriding-theme-defaults&quot;&gt;overriding theme defaults&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;/h3&gt;
-&lt;p&gt;I wanted use a plugin that would automatically generate a page for each tag where I could see all the posts that had been assigned that tag. Github pages &lt;a href=&quot;https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/&quot;&gt;does not support many plugins&lt;/a&gt; (&lt;a href=&quot;https://github.com/jekyll/jekyll/issues/325&quot;&gt;more on that&lt;/a&gt;) but you can get around this issue by building your site locally and only pushing the static files. To do that I followed the instructions here: &lt;a href=&quot;http://charliepark.org/jekyll-with-plugins/&quot;&gt;Jekyll + Plugins + Github + You&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I wanted to use a plugin that would automatically generate a page for each tag where I could see all the posts that had been assigned that tag. Github pages &lt;a href=&quot;https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/&quot;&gt;does not support many plugins&lt;/a&gt; (&lt;a href=&quot;https://github.com/jekyll/jekyll/issues/325&quot;&gt;more on that&lt;/a&gt;) but you can get around this issue by building your site locally and only pushing the static files. To do that I followed the instructions here: &lt;a href=&quot;http://charliepark.org/jekyll-with-plugins/&quot;&gt;Jekyll + Plugins + Github + You&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Then I went ahead and &lt;a href=&quot;http://charliepark.org/tags-in-jekyll/&quot;&gt;installed the tagging plugin&lt;/a&gt;. In order for it to work, I had to remove &lt;code class=&quot;highlighter-rouge&quot;&gt;group: :jekyll_plugins&lt;/code&gt; from my Gemfile (&lt;a href=&quot;https://jekyllrb.com/docs/plugins/#installing-a-plugin&quot;&gt;see “installing a plugin” Jekyll docs&lt;/a&gt;).&lt;/p&gt;
 
