@@ -89,13 +89,13 @@
   <article class="post-content">
     <p>My blog is back up and running. Here are some notes. The <a href="https://jekyllrb.com/docs/home/">Jekyll documentation</a> is probably a better reference.</p>
 
-<h4 id="install">Install</h4>
+<h3 id="install">Install</h3>
 <p>I followed the instructions here: <a href="https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/">setting up your GitHub Pages site locally with Jekyll</a>.</p>
 
-<h4 id="layout-and-style">Layout and Style</h4>
+<h3 id="layout-and-style">Layout and Style</h3>
 <p>I wanted to make some tweaks to the minima theme so I followed the instructions here on <a href="http://jekyllrb.com/docs/themes/#overriding-theme-defaults">overriding theme defaults</a>.</p>
 
-<h4 id="plugins">Plugins</h4>
+<h3 id="plugins">Plugins</h3>
 <p>I wanted use a plugin that would automatically generate a page for each tag where I could see all the posts that had been assigned that tag. Github pages <a href="https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/">does not support many plugins</a> (<a href="https://github.com/jekyll/jekyll/issues/325">more on that</a>) but you can get around this issue by building your site locally and only pushing the static files. To do that I followed the instructions here: <a href="http://charliepark.org/jekyll-with-plugins/">Jekyll + Plugins + Github + You</a>.</p>
 
 <p>Then I went ahead and <a href="http://charliepark.org/tags-in-jekyll/">installed the tagging plugin</a>. In order for it to work, I had to remove <code class="highlighter-rouge">group: :jekyll_plugins</code> from my Gemfile (<a href="https://jekyllrb.com/docs/plugins/#installing-a-plugin">see “installing a plugin” Jekyll docs</a>).</p>
@@ -104,7 +104,7 @@
 
 <p>I haven’t done this yet, but I’d like to check out <a href="https://cwoebker.com/posts/latex-math-magic">using latex in jekyll</a>.</p>
 
-<h4 id="workflow">Workflow</h4>
+<h3 id="workflow">Workflow</h3>
 <p>Here’s what I added to my <code class="highlighter-rouge">.bash_profile</code>, you’ll need to change it for your directory structure. It assumes you are using the set up described in <a href="http://charliepark.org/jekyll-with-plugins/">Jekyll + Plugins + Github + You</a>.</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">########## jekyll blog aliases / functions #################</span>
