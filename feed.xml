@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Jul 2017 19:03:38 -0700</pubDate>
-    <lastBuildDate>Mon, 17 Jul 2017 19:03:38 -0700</lastBuildDate>
+    <pubDate>Mon, 17 Jul 2017 19:10:07 -0700</pubDate>
+    <lastBuildDate>Mon, 17 Jul 2017 19:10:07 -0700</lastBuildDate>
     <generator>Jekyll v3.4.5</generator>
     
       <item>
@@ -15,7 +15,7 @@
         <description>&lt;p&gt;My blog is back up and running. Here are some notes. The &lt;a href=&quot;https://jekyllrb.com/docs/home/&quot;&gt;Jekyll documentation&lt;/a&gt; is probably a better reference.&lt;/p&gt;
 
 &lt;h4 id=&quot;install&quot;&gt;Install&lt;/h4&gt;
-&lt;p&gt;I followed the instructions here: &lt;a href=&quot;https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/&quot;&gt;setting up your GitHub Pages site locally with Jekyll&lt;/a&gt;, and then updated the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file with my information.&lt;/p&gt;
+&lt;p&gt;I followed the instructions here: &lt;a href=&quot;https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/&quot;&gt;setting up your GitHub Pages site locally with Jekyll&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;layout-and-style&quot;&gt;Layout and Style&lt;/h4&gt;
 &lt;p&gt;I wanted to make some tweaks to the minima theme so I followed the instructions here on &lt;a href=&quot;http://jekyllrb.com/docs/themes/#overriding-theme-defaults&quot;&gt;overriding theme defaults&lt;/a&gt;.&lt;/p&gt;
