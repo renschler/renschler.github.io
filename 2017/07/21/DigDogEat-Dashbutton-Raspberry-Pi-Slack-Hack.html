@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Renschler | DidDogEat? Dashbutton to Raspberry Pi to Slack</title>
+  <meta name="description" content="Amazon dash buttons are wifi connected devices that you are supposed to configure with your prime account so you can order a preselected product at the click...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/2017/07/21/DigDogEat-Dashbutton-Raspberry-Pi-Slack-Hack.html">
+  <link rel="alternate" type="application/rss+xml" title="Patrick Renschler" href="/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Patrick Renschler</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+  	<h1 style="margin-bottom:0px" class="post_title">DidDogEat? Dashbutton to Raspberry Pi to Slack</h1>
+    <p class="post-meta">
+    	Jul 21, 2017
+    	
+    	
+    	 | 
+    		<a  style="color:#828282" class="tag_list_link" href="/tag/projects">projects</a> |
+    	
+    		<a  style="color:#828282" class="tag_list_link" href="/tag/IoT">IoT</a> |
+    	
+    		<a  style="color:#828282" class="tag_list_link" href="/tag/raspberry">raspberry</a> |
+    	
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p>Amazon dash buttons are wifi connected devices that you are supposed to configure with your prime account so you can order a preselected product at the click of the button.</p>
+
+<p>It turns out the internet has found <a href="https://www.google.com/search?q=dash+button+hack">many ways</a> to repurpose them for IoT projects.</p>
+
+<p>Normally dash buttons sell for $5 (which gets refunded after your first purchase), but on prime day last week they were selling for 99 cents so I decided to buy a few to play around with.</p>
+
+<p>This post covers how I setup a dashbutton, raspberry pi, and slack app to keep track of the dog getting fed.</p>
+
+<div class="video"><figure><iframe width="640" height="480" src="//www.youtube.com/embed/xa-Q7N8yGsQ" frameborder="0" allowfullscreen=""></iframe></figure></div>
+
+<p>And this is George. He is a good boy.</p>
+
+<p><img src="/images/George.gif" alt="Photo" /></p>
+
+<h3 id="what-i-used">What I used</h3>
+
+<ul>
+  <li>Raspberry Pi Zero W (<a href="https://www.adafruit.com/product/3400">$10</a>)</li>
+  <li>SanDisk Ultra 32GB microSD (<a href="http://amzn.to/2ud6ZvU">$12.99</a>)</li>
+  <li><a href="https://www.amazon.com/Dash-Buttons/b?ie=UTF8&amp;node=10667898011">Amazon dash button</a></li>
+  <li>MicroUSB power supply</li>
+  <li>Laptop running macOS Sierra</li>
+</ul>
+
+<p>Kind of expensive for a button project, but I have a couple apps, like this <a href="http://ec2-54-69-226-237.us-west-2.compute.amazonaws.com/">flight checkin app</a>, running on an aws t2.nano instance that I should be able to move to the pi.</p>
+
+<p>Also, I didn’t get a case but these <a href="https://www.indiegogo.com/projects/pi-zero-ali-keychain--2#/">aluminum keychain ones</a> look sweet.</p>
+
+<h3 id="raspberry-pi-zero-w-setup">Raspberry Pi Zero W setup</h3>
+
+<p>First I followed the instructions here: <a href="https://learn.adafruit.com/adafruit-raspberry-pi-lesson-1-preparing-and-sd-card-for-your-raspberry-pi">Preparing an SD Card for your Raspberry Pi</a>. You’ll have some options, I chose to go with the <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspian Jessie Lite image</a> because I don’t need the desktop functionality and no way I was choosing the image called “NOOBS”.</p>
+
+<p>To flash the image onto my SD card, I broke away from the adafruit instructions and <a href="https://computers.tutsplus.com/articles/how-to-flash-an-sd-card-for-raspberry-pi--mac-53600">used these</a>.</p>
+
+<p><em>Note: Make sure the micro SD adapter toggle is set to the unlocked position when you put it into your machine. Also as a heads up the dd command took ~20 minutes to finish, so it probably would have been faster and safer to just download the <a href="https://etcher.io/">etcher software</a> and do what adafruit recommends…</em></p>
+
+<p>Next I moved onto the instructions starting here: <a href="https://learn.adafruit.com/raspberry-pi-zero-creation/text-file-editing">Raspberry Pi Zero Headless Quick Start Text File Editing</a>. Once I was able to SSH in, I changed the default password and then ran the following:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">## contents from setup_script_1.sh ##</span>
+sudo apt update
+sudo apt upgrade -y
+
+sudo apt install git -y
+sudo apt install emacs -y
+
+<span class="c"># set up git, modify for yourself</span>
+git config --global user.name <span class="s2">"Patrick Renschler"</span>
+git config --global user.email myemail@email.com
+git config --global core.editor emacs
+git config --list
+
+<span class="c"># clone rest of setup commands from my public repo</span>
+git clone https://github.com/renschler/public_setups.git
+<span class="nb">cd </span>public_setups
+
+<span class="c"># run rest of setup commands</span>
+./pi_setup_script_2.sh
+
+<span class="c"># run the setup commands for this dash button project</span>
+./dash_button_setup.sh</code></pre></figure>
+
+<p>The scripts will install git, install emacs (a text editor), change various environment settings, and then install the python libraries you need for this project. You can review all the code here: <a href="https://github.com/renschler/public_setups">https://github.com/renschler/public_setups</a>.</p>
+
+<p>If you don’t care for emacs you can comment out those lines. If you want to check it out <a href="https://github.com/renschler/public_setups/blob/master/COS%20217%20Emacs%20Cheat%20Sheet.pdf">here’s the emacs tutorial</a> I used to get started in college. It provides documentation for the <code class="highlighter-rouge">.emacs</code> file included in my setups repository.</p>
+
+<p>Lastly I added the following line to my laptop’s <code class="highlighter-rouge">.bash_profile</code>, I use this convention for connecting to other machines that have harder to remember ssh commands.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># pi zero ssh</span>
+<span class="nb">alias </span>pi-z-ssh<span class="o">=</span><span class="s1">'ssh pi@raspberrypi.local'</span></code></pre></figure>
+
+<h3 id="dash-button-setup">Dash button setup</h3>
+
+<p>There’s two things you need to do here: get the MAC address of your button, and then configure it for your home wifi network.</p>
+
+<p>Press the dash button and hold it down until the blue light comes on. On your laptop or phone, look for a wifi network named “Amazon ConfigureMe” and then join it. Open up a browser and go to <code class="highlighter-rouge">192.168.0.1</code>. This should show you a page that has your button’s MAC address which you’ll need to write down.</p>
+
+<p><img src="/images/MAC_ADDRESS.png" alt="Photo" /></p>
+
+<p>The easiest way (only way? lol) to set up your dash button on your home wifi is to use the amazon mobile app. Sign into your amazon account, then open the menu from the top left and click “Your Account”.</p>
+
+<p>Scroll down to “Dash Buttons &amp; Devices”, and click the “Set up a new device” option.</p>
+
+<p><img src="/images/Select_Device.png" alt="Photo" /></p>
+
+<p>Follow the instructions to set up your dash button but <span style="color:red"><strong>do not select a product</strong></span>. Click the X in the top right and exit the setup before choosing what product you want to order.</p>
+
+<p><img src="/images/Exit_Setup.png" alt="Photo" /></p>
+
+<h3 id="tcpdump">Tcpdump</h3>
+
+<p>Ok assuming your amazon dash button and raspberry pi are connected to the same wifi network, we can use tcpdump to listen for your button being pushed.</p>
+
+<p>SSH back into your pi, and run this command substituting in the MAC address of your dash button.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Modify with the mac address of your dash button</span>
+sudo tcpdump ether host b4:7c:9c:3a:00:d4</code></pre></figure>
+
+<p>Click your dash button and you should see some packets! Hit CTRL-C to stop tcpdump.</p>
+
+<p><img src="/images/tcpdump.png" alt="Photo" /></p>
+
+<p>It looks like everytime we click the dash button it broadcasts a DHCP packet, so we can use that as our trigger.</p>
+
+<h3 id="python">Python</h3>
+
+<p>Now we will use the python library <code class="highlighter-rouge">scapy</code> to listen for the click of your dash button (like tcpdump), and then print “Hello world” when it is detected.</p>
+
+<p>Create a new file called <code class="highlighter-rouge">dashbutton.py</code> and paste this into it:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">def</span> <span class="nf">feed_dog</span><span class="p">():</span>
+	<span class="k">print</span> <span class="s">"Hello, world!"</span>
+	<span class="k">return</span>
+
+<span class="c"># substitute in your mac address</span>
+<span class="n">dashset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s">"b4:7c:9c:3a:00:d4"</span><span class="p">])</span>
+<span class="n">dashdict</span> <span class="o">=</span> <span class="p">{</span><span class="s">"b4:7c:9c:3a:00:d4"</span><span class="p">:</span><span class="n">feed_dog</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">dhcp_display</span><span class="p">(</span><span class="n">pkt</span><span class="p">):</span>
+	<span class="k">print</span> <span class="s">"DHCP packet from: "</span><span class="o">+</span> <span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span>
+	<span class="n">dashdict</span><span class="p">[</span><span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span><span class="p">]()</span>
+	<span class="k">return</span>
+
+<span class="k">print</span> <span class="n">sniff</span><span class="p">(</span><span class="n">prn</span><span class="o">=</span><span class="n">dhcp_display</span><span class="p">,</span> <span class="n">lfilter</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">haslayer</span><span class="p">(</span><span class="n">DHCP</span><span class="p">)</span> <span class="ow">and</span> <span class="n">x</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span> <span class="ow">in</span> <span class="n">dashset</span><span class="p">,</span> <span class="n">store</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code></pre></figure>
+
+<p>Start the program with <code class="highlighter-rouge">sudo python dashbutton.py</code>, click your button, you should get a Hello, World!</p>
+
+<h3 id="adding-slack">Adding slack</h3>
+
+<p>The last step to this project is integrating slack’s python library so that when we detect a button press we can post a message to the #dogfood channel saying the dog was fed.</p>
+
+<p>If you don’t have a slack team yet, you’ll need to <a href="https://slack.com/create">make one</a>. Next, sign into your team and go to the <a href="https://api.slack.com/slack-apps">building slack apps page</a>. Click the green “Create a Slack App” button. When you get to the ‘Basic Information’ page, click the Permissions tile.</p>
+
+<p><img src="/images/BasicInformation.png" alt="Photo" /></p>
+
+<p>Then scroll down to ‘Permission Scopes’, add the “Send messages as [APP_NAME]” permission, and save changes.</p>
+
+<p><img src="/images/PermissionScopes.png" alt="Photo" /></p>
+
+<p>On the same page, at the top, click the green button that says “Install App to Team”. When you’ve finished that you’ll land on the page with an <code class="highlighter-rouge">OAuth Access Token</code> displayed. You will need this to send messages from our python program.</p>
+
+<p>Reopen the <code class="highlighter-rouge">dashbutton.py</code> program, and modify it so that it matches what’s below:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">slackclient</span> <span class="kn">import</span> <span class="n">SlackClient</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">slack_token</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s">"SLACK_BOT_TOKEN"</span><span class="p">]</span>
+<span class="n">sc</span> <span class="o">=</span> <span class="n">SlackClient</span><span class="p">(</span><span class="n">slack_token</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">feed_dog</span><span class="p">():</span>
+	<span class="n">sc</span><span class="o">.</span><span class="n">api_call</span><span class="p">(</span>
+		<span class="s">"chat.postMessage"</span><span class="p">,</span>
+		<span class="n">channel</span><span class="o">=</span><span class="s">"#dogfood"</span><span class="p">,</span>
+		<span class="n">text</span><span class="o">=</span><span class="s">"The dog just got food! :tada:"</span>
+		<span class="p">)</span>
+	<span class="k">return</span>
+
+<span class="c"># substitute in your mac address                                                                                                                                                                                   </span>
+<span class="n">dashset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s">"b4:7c:9c:3a:00:d4"</span><span class="p">])</span>
+<span class="n">dashdict</span> <span class="o">=</span> <span class="p">{</span><span class="s">"b4:7c:9c:3a:00:d4"</span><span class="p">:</span><span class="n">feed_dog</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">dhcp_display</span><span class="p">(</span><span class="n">pkt</span><span class="p">):</span>
+    <span class="k">print</span> <span class="s">"DHCP packet from: "</span><span class="o">+</span> <span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span>
+    <span class="n">dashdict</span><span class="p">[</span><span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span><span class="p">]()</span>
+    <span class="k">return</span>
+
+<span class="k">print</span> <span class="n">sniff</span><span class="p">(</span><span class="n">prn</span><span class="o">=</span><span class="n">dhcp_display</span><span class="p">,</span> <span class="n">lfilter</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">haslayer</span><span class="p">(</span><span class="n">DHCP</span><span class="p">)</span> <span class="ow">and</span> <span class="n">x</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span> <span class="ow">in</span> <span class="n">dashset</span><span class="p">,</span> <span class="n">store</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code></pre></figure>
+
+<p>Assuming you have a channel named <code class="highlighter-rouge">#dogfood</code>, you can start this program with</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">sudo <span class="nv">SLACK_BOT_TOKEN</span><span class="o">=</span><span class="s2">"PASTE-IN-YOUR-TOKEN"</span> python dashbutton.py</code></pre></figure>
+
+<p>When you click the dash button you should see a message show up from your app in the #dogfood channel!</p>
+
+<p>The very last thing I did was schedule a cron job that will start this program everytime the raspberry pi reboots.</p>
+
+<p>Type <code class="highlighter-rouge">crontab -e</code> into the terminal, and then add the following line, as it’s own line, at the bottom of the file. Do not preface it with a #.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">@reboot <span class="nb">cd</span>; sudo <span class="nv">SLACK_BOT_TOKEN</span><span class="o">=</span><span class="s2">"PASTE-IN-YOUR-TOKEN"</span> python dashbutton.py</code></pre></figure>
+
+<p>Then leave one empty line below that command, before the end of the file, and you are good to exit. Although, depending on where the <code class="highlighter-rouge">dashbutton.py</code> file is located on your pi, you may have to change that command so it has the right path.</p>
+
+<p>But ya that’s it! If you ever want to support more dash buttons on your network, you can add additional functions and MAC Addresses to the <code class="highlighter-rouge">dashdict</code> &amp; <code class="highlighter-rouge">dashset</code> objects.</p>
+
+<h3 id="related-but-different">Related but different</h3>
+<h4 id="links">Links</h4>
+<ul>
+  <li><a href="https://medium.com/@ecaron/why-i-stopped-hacking-the-amazon-dash-button-and-learned-to-solder-84386a38bbd1">Why I stopped hacking the amazon dash button and learned how to solder</a></li>
+  <li><a href="https://www.hackster.io/noelportugal/ifttt-smart-button-e11841">IFTTT Smart Button</a></li>
+</ul>
+
+<h4 id="alexa-skills">Alexa skills</h4>
+
+<p>I also checked out making an Alexa skill instead of connecting with slack. I went through the <a href="https://developer.amazon.com/alexa-skills-kit/alexa-skill-quick-start-tutorial">quick start tutorial</a>, but my takeway was that the platform is too restrictive in terms of how you have to summon your skill.</p>
+
+<p>Take my dog food app as an example. I wanted to make a skill so that anyone in house could just be like “Alexa, did the dog eat?”, “Alexa, did someone feed the dog?”, “Alexa, has the dog had dinner?”… If Alexa has my skill installed, it should know to use my skill to answer those questions. Instead you have to give your skill a trigger name like “Dog App”, and then people would have to say something like, “Alexa ask Dog App if the dog ate”, or “Alexa open Dog App”, or just “Alexa, Dog App”. People need to remember what the app is called, which is bad UX. It’s fine when your skill is brand related; everyone will remember that to hail an uber you have to say the word uber. But for smart home style questions, it seems very limiting.</p>
+
+<p>When you build your skill, you provide all the possible use phrases, the ones that I mentioned earlier, like “did the dog eat” or “when did the dog eat” and you map these to a specific intent which your program can use to decide what to execute and return. So your skill effectively creates a mapping of ‘things that can be asked’ to ‘operations that should be performed or information that should be provided’, but it’s conditional on being triggered by the app name. I assume that was done to avoid the issue of having conflicts between different skills. Or maybe Amazon wants to keep control over these coloquial queries, and eventually release some Amazon-only smart home solution. I don’t know.</p>
+
+<p>I tried to game it, but still wasn’t satisfied. Your skill name can only be 3 words or less, so I tried “did thedog eat”. Then when I said “Alexa, did the dog eat?”, my app was triggered. But you lose the flexibility of having multiple detection phrases, so everyone still has to remember to say “did the dog eat” and not one of the other ways to ask…</p>
+
+<p>Anyways, this is what I gathered from the quick start tutorial and like 20 min of reading the docs. So I thought it would be easier for my family to just check a slack channel when they wanted to know if the dog was fed.</p>
+
+<h3 id="thanks-for-reading">Thanks for reading!</h3>
+
+  </article>
+
+  <div class="comments">
+    
+      <div id="disqus_thread"></div>
+      <script>
+          /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+           */
+          /*
+          var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          */
+          (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+              var d = document, s = d.createElement('script');
+              
+              s.src = '//renschler.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+              
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!--<h2 class="footer-heading">Patrick Renschler</h2>-->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>
+            <img width="16px" height="16px" style="border-radius:10%" src="/images/shortwhale_logo.png"/>
+            <a href="http://www.shortwhale.com/p_renschler">
+              <span class="username">email</span>
+            </a>
+          </li>
+
+          
+          <li>
+            <img width="16px" height="16px" style="border-radius:10%" src="/images/Twitter_Logo.png" alt="Twitter"/>
+            <a href="https://twitter.com/p_renschler">
+              <span class="username">@p_renschler</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <img width="16px" height="16px" style="border-radius:10%" src="/images/AngelList_Black.png" alt="AngelList"/>
+            <a href="https://angel.co/renschler">
+              <span class="username">angelList</span>
+            </a>
+          </li>
+          
+
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+          <li>
+            <style>
+              .strava-badge- {height: 16px; }
+              .strava-badge- img { visibility: hidden; height: 16px; }
+              .strava-badge-follow { height: 16px; width: 16px; background: url(/images/echelon-sprite-16.png) no-repeat 0 0; }
+            </style>
+            <span class="strava-badge- strava-badge-follow">
+              <img width="16px" height="16px" src="/images/echelon-sprite-16.png" alt="Strava" />
+            </span>
+            <a href="http://strava.com/athletes/10063857/badge">
+              <span class="username">strava</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <img width="16px" height="16px" style="border-radius:10%" src="/images/blockstack.jpg"/>
+            <a href="https://onename.com/renschler">
+              <span class="username">onename</span>
+            </a>
+          </li>
+          
+
+          <li>
+            <img width="16px" height="16px" src="/images/RecurseCenter.ico"/>
+            <a href="https://www.recurse.com/scout/click?t=23fd2353e4c12b9aef0190f99df6c3cd">
+              <span class="username">recurse center!</span>
+            </a>
+            <div height="16px" width="16px" class="rc-scout"></div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <ul class="social-media-list">
+          
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+
+</html>

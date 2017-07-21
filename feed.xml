@@ -6,9 +6,231 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Jul 2017 05:32:04 -0700</pubDate>
-    <lastBuildDate>Fri, 21 Jul 2017 05:32:04 -0700</lastBuildDate>
+    <pubDate>Fri, 21 Jul 2017 05:35:33 -0700</pubDate>
+    <lastBuildDate>Fri, 21 Jul 2017 05:35:33 -0700</lastBuildDate>
     <generator>Jekyll v3.4.5</generator>
+    
+      <item>
+        <title>DidDogEat? Dashbutton to Raspberry Pi to Slack</title>
+        <description>&lt;p&gt;Amazon dash buttons are wifi connected devices that you are supposed to configure with your prime account so you can order a preselected product at the click of the button.&lt;/p&gt;
+
+&lt;p&gt;It turns out the internet has found &lt;a href=&quot;https://www.google.com/search?q=dash+button+hack&quot;&gt;many ways&lt;/a&gt; to repurpose them for IoT projects.&lt;/p&gt;
+
+&lt;p&gt;Normally dash buttons sell for $5 (which gets refunded after your first purchase), but on prime day last week they were selling for 99 cents so I decided to buy a few to play around with.&lt;/p&gt;
+
+&lt;p&gt;This post covers how I setup a dashbutton, raspberry pi, and slack app to keep track of the dog getting fed.&lt;/p&gt;
+
+&lt;div class=&quot;video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/xa-Q7N8yGsQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
+
+&lt;p&gt;And this is George. He is a good boy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/George.gif&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-i-used&quot;&gt;What I used&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Raspberry Pi Zero W (&lt;a href=&quot;https://www.adafruit.com/product/3400&quot;&gt;$10&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;SanDisk Ultra 32GB microSD (&lt;a href=&quot;http://amzn.to/2ud6ZvU&quot;&gt;$12.99&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Dash-Buttons/b?ie=UTF8&amp;amp;node=10667898011&quot;&gt;Amazon dash button&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;MicroUSB power supply&lt;/li&gt;
+  &lt;li&gt;Laptop running macOS Sierra&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Kind of expensive for a button project, but I have a couple apps, like this &lt;a href=&quot;http://ec2-54-69-226-237.us-west-2.compute.amazonaws.com/&quot;&gt;flight checkin app&lt;/a&gt;, running on an aws t2.nano instance that I should be able to move to the pi.&lt;/p&gt;
+
+&lt;p&gt;Also, I didn’t get a case but these &lt;a href=&quot;https://www.indiegogo.com/projects/pi-zero-ali-keychain--2#/&quot;&gt;aluminum keychain ones&lt;/a&gt; look sweet.&lt;/p&gt;
+
+&lt;h3 id=&quot;raspberry-pi-zero-w-setup&quot;&gt;Raspberry Pi Zero W setup&lt;/h3&gt;
+
+&lt;p&gt;First I followed the instructions here: &lt;a href=&quot;https://learn.adafruit.com/adafruit-raspberry-pi-lesson-1-preparing-and-sd-card-for-your-raspberry-pi&quot;&gt;Preparing an SD Card for your Raspberry Pi&lt;/a&gt;. You’ll have some options, I chose to go with the &lt;a href=&quot;https://www.raspberrypi.org/downloads/raspbian/&quot;&gt;Raspian Jessie Lite image&lt;/a&gt; because I don’t need the desktop functionality and no way I was choosing the image called “NOOBS”.&lt;/p&gt;
+
+&lt;p&gt;To flash the image onto my SD card, I broke away from the adafruit instructions and &lt;a href=&quot;https://computers.tutsplus.com/articles/how-to-flash-an-sd-card-for-raspberry-pi--mac-53600&quot;&gt;used these&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: Make sure the micro SD adapter toggle is set to the unlocked position when you put it into your machine. Also as a heads up the dd command took ~20 minutes to finish, so it probably would have been faster and safer to just download the &lt;a href=&quot;https://etcher.io/&quot;&gt;etcher software&lt;/a&gt; and do what adafruit recommends…&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Next I moved onto the instructions starting here: &lt;a href=&quot;https://learn.adafruit.com/raspberry-pi-zero-creation/text-file-editing&quot;&gt;Raspberry Pi Zero Headless Quick Start Text File Editing&lt;/a&gt;. Once I was able to SSH in, I changed the default password and then ran the following:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;## contents from setup_script_1.sh ##&lt;/span&gt;
+sudo apt update
+sudo apt upgrade -y
+
+sudo apt install git -y
+sudo apt install emacs -y
+
+&lt;span class=&quot;c&quot;&gt;# set up git, modify for yourself&lt;/span&gt;
+git config --global user.name &lt;span class=&quot;s2&quot;&gt;&quot;Patrick Renschler&quot;&lt;/span&gt;
+git config --global user.email myemail@email.com
+git config --global core.editor emacs
+git config --list
+
+&lt;span class=&quot;c&quot;&gt;# clone rest of setup commands from my public repo&lt;/span&gt;
+git clone https://github.com/renschler/public_setups.git
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;public_setups
+
+&lt;span class=&quot;c&quot;&gt;# run rest of setup commands&lt;/span&gt;
+./pi_setup_script_2.sh
+
+&lt;span class=&quot;c&quot;&gt;# run the setup commands for this dash button project&lt;/span&gt;
+./dash_button_setup.sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The scripts will install git, install emacs (a text editor), change various environment settings, and then install the python libraries you need for this project. You can review all the code here: &lt;a href=&quot;https://github.com/renschler/public_setups&quot;&gt;https://github.com/renschler/public_setups&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you don’t care for emacs you can comment out those lines. If you want to check it out &lt;a href=&quot;https://github.com/renschler/public_setups/blob/master/COS%20217%20Emacs%20Cheat%20Sheet.pdf&quot;&gt;here’s the emacs tutorial&lt;/a&gt; I used to get started in college. It provides documentation for the &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; file included in my setups repository.&lt;/p&gt;
+
+&lt;p&gt;Lastly I added the following line to my laptop’s &lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_profile&lt;/code&gt;, I use this convention for connecting to other machines that have harder to remember ssh commands.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# pi zero ssh&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;pi-z-ssh&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ssh pi@raspberrypi.local'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;dash-button-setup&quot;&gt;Dash button setup&lt;/h3&gt;
+
+&lt;p&gt;There’s two things you need to do here: get the MAC address of your button, and then configure it for your home wifi network.&lt;/p&gt;
+
+&lt;p&gt;Press the dash button and hold it down until the blue light comes on. On your laptop or phone, look for a wifi network named “Amazon ConfigureMe” and then join it. Open up a browser and go to &lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.0.1&lt;/code&gt;. This should show you a page that has your button’s MAC address which you’ll need to write down.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/MAC_ADDRESS.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The easiest way (only way? lol) to set up your dash button on your home wifi is to use the amazon mobile app. Sign into your amazon account, then open the menu from the top left and click “Your Account”.&lt;/p&gt;
+
+&lt;p&gt;Scroll down to “Dash Buttons &amp;amp; Devices”, and click the “Set up a new device” option.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Select_Device.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Follow the instructions to set up your dash button but &lt;span style=&quot;color:red&quot;&gt;&lt;strong&gt;do not select a product&lt;/strong&gt;&lt;/span&gt;. Click the X in the top right and exit the setup before choosing what product you want to order.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Exit_Setup.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tcpdump&quot;&gt;Tcpdump&lt;/h3&gt;
+
+&lt;p&gt;Ok assuming your amazon dash button and raspberry pi are connected to the same wifi network, we can use tcpdump to listen for your button being pushed.&lt;/p&gt;
+
+&lt;p&gt;SSH back into your pi, and run this command substituting in the MAC address of your dash button.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Modify with the mac address of your dash button&lt;/span&gt;
+sudo tcpdump ether host b4:7c:9c:3a:00:d4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Click your dash button and you should see some packets! Hit CTRL-C to stop tcpdump.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/tcpdump.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It looks like everytime we click the dash button it broadcasts a DHCP packet, so we can use that as our trigger.&lt;/p&gt;
+
+&lt;h3 id=&quot;python&quot;&gt;Python&lt;/h3&gt;
+
+&lt;p&gt;Now we will use the python library &lt;code class=&quot;highlighter-rouge&quot;&gt;scapy&lt;/code&gt; to listen for the click of your dash button (like tcpdump), and then print “Hello world” when it is detected.&lt;/p&gt;
+
+&lt;p&gt;Create a new file called &lt;code class=&quot;highlighter-rouge&quot;&gt;dashbutton.py&lt;/code&gt; and paste this into it:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scapy.all&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;feed_dog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# substitute in your mac address&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dashset&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b4:7c:9c:3a:00:d4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dashdict&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b4:7c:9c:3a:00:d4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feed_dog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dhcp_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;DHCP packet from: &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;dashdict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]()&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sniff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dhcp_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lfilter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;haslayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DHCP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dashset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Start the program with &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo python dashbutton.py&lt;/code&gt;, click your button, you should get a Hello, World!&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-slack&quot;&gt;Adding slack&lt;/h3&gt;
+
+&lt;p&gt;The last step to this project is integrating slack’s python library so that when we detect a button press we can post a message to the #dogfood channel saying the dog was fed.&lt;/p&gt;
+
+&lt;p&gt;If you don’t have a slack team yet, you’ll need to &lt;a href=&quot;https://slack.com/create&quot;&gt;make one&lt;/a&gt;. Next, sign into your team and go to the &lt;a href=&quot;https://api.slack.com/slack-apps&quot;&gt;building slack apps page&lt;/a&gt;. Click the green “Create a Slack App” button. When you get to the ‘Basic Information’ page, click the Permissions tile.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/BasicInformation.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then scroll down to ‘Permission Scopes’, add the “Send messages as [APP_NAME]” permission, and save changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/PermissionScopes.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the same page, at the top, click the green button that says “Install App to Team”. When you’ve finished that you’ll land on the page with an &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth Access Token&lt;/code&gt; displayed. You will need this to send messages from our python program.&lt;/p&gt;
+
+&lt;p&gt;Reopen the &lt;code class=&quot;highlighter-rouge&quot;&gt;dashbutton.py&lt;/code&gt; program, and modify it so that it matches what’s below:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scapy.all&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;slackclient&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SlackClient&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;slack_token&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;environ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SLACK_BOT_TOKEN&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SlackClient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slack_token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;feed_dog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+		&lt;span class=&quot;s&quot;&gt;&quot;chat.postMessage&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#dogfood&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The dog just got food! :tada:&quot;&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# substitute in your mac address                                                                                                                                                                                   &lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dashset&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b4:7c:9c:3a:00:d4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dashdict&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b4:7c:9c:3a:00:d4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feed_dog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dhcp_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;DHCP packet from: &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dashdict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sniff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dhcp_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lfilter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;haslayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DHCP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dashset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Assuming you have a channel named &lt;code class=&quot;highlighter-rouge&quot;&gt;#dogfood&lt;/code&gt;, you can start this program with&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo &lt;span class=&quot;nv&quot;&gt;SLACK_BOT_TOKEN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PASTE-IN-YOUR-TOKEN&quot;&lt;/span&gt; python dashbutton.py&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;When you click the dash button you should see a message show up from your app in the #dogfood channel!&lt;/p&gt;
+
+&lt;p&gt;The very last thing I did was schedule a cron job that will start this program everytime the raspberry pi reboots.&lt;/p&gt;
+
+&lt;p&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;crontab -e&lt;/code&gt; into the terminal, and then add the following line, as it’s own line, at the bottom of the file. Do not preface it with a #.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;@reboot &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;; sudo &lt;span class=&quot;nv&quot;&gt;SLACK_BOT_TOKEN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PASTE-IN-YOUR-TOKEN&quot;&lt;/span&gt; python dashbutton.py&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then leave one empty line below that command, before the end of the file, and you are good to exit. Although, depending on where the &lt;code class=&quot;highlighter-rouge&quot;&gt;dashbutton.py&lt;/code&gt; file is located on your pi, you may have to change that command so it has the right path.&lt;/p&gt;
+
+&lt;p&gt;But ya that’s it! If you ever want to support more dash buttons on your network, you can add additional functions and MAC Addresses to the &lt;code class=&quot;highlighter-rouge&quot;&gt;dashdict&lt;/code&gt; &amp;amp; &lt;code class=&quot;highlighter-rouge&quot;&gt;dashset&lt;/code&gt; objects.&lt;/p&gt;
+
+&lt;h3 id=&quot;related-but-different&quot;&gt;Related but different&lt;/h3&gt;
+&lt;h4 id=&quot;links&quot;&gt;Links&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@ecaron/why-i-stopped-hacking-the-amazon-dash-button-and-learned-to-solder-84386a38bbd1&quot;&gt;Why I stopped hacking the amazon dash button and learned how to solder&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackster.io/noelportugal/ifttt-smart-button-e11841&quot;&gt;IFTTT Smart Button&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;alexa-skills&quot;&gt;Alexa skills&lt;/h4&gt;
+
+&lt;p&gt;I also checked out making an Alexa skill instead of connecting with slack. I went through the &lt;a href=&quot;https://developer.amazon.com/alexa-skills-kit/alexa-skill-quick-start-tutorial&quot;&gt;quick start tutorial&lt;/a&gt;, but my takeway was that the platform is too restrictive in terms of how you have to summon your skill.&lt;/p&gt;
+
+&lt;p&gt;Take my dog food app as an example. I wanted to make a skill so that anyone in house could just be like “Alexa, did the dog eat?”, “Alexa, did someone feed the dog?”, “Alexa, has the dog had dinner?”… If Alexa has my skill installed, it should know to use my skill to answer those questions. Instead you have to give your skill a trigger name like “Dog App”, and then people would have to say something like, “Alexa ask Dog App if the dog ate”, or “Alexa open Dog App”, or just “Alexa, Dog App”. People need to remember what the app is called, which is bad UX. It’s fine when your skill is brand related; everyone will remember that to hail an uber you have to say the word uber. But for smart home style questions, it seems very limiting.&lt;/p&gt;
+
+&lt;p&gt;When you build your skill, you provide all the possible use phrases, the ones that I mentioned earlier, like “did the dog eat” or “when did the dog eat” and you map these to a specific intent which your program can use to decide what to execute and return. So your skill effectively creates a mapping of ‘things that can be asked’ to ‘operations that should be performed or information that should be provided’, but it’s conditional on being triggered by the app name. I assume that was done to avoid the issue of having conflicts between different skills. Or maybe Amazon wants to keep control over these coloquial queries, and eventually release some Amazon-only smart home solution. I don’t know.&lt;/p&gt;
+
+&lt;p&gt;I tried to game it, but still wasn’t satisfied. Your skill name can only be 3 words or less, so I tried “did thedog eat”. Then when I said “Alexa, did the dog eat?”, my app was triggered. But you lose the flexibility of having multiple detection phrases, so everyone still has to remember to say “did the dog eat” and not one of the other ways to ask…&lt;/p&gt;
+
+&lt;p&gt;Anyways, this is what I gathered from the quick start tutorial and like 20 min of reading the docs. So I thought it would be easier for my family to just check a slack channel when they wanted to know if the dog was fed.&lt;/p&gt;
+
+&lt;h3 id=&quot;thanks-for-reading&quot;&gt;Thanks for reading!&lt;/h3&gt;
+</description>
+        <pubDate>Fri, 21 Jul 2017 00:00:00 -0700</pubDate>
+        <link>/2017/07/21/DigDogEat-Dashbutton-Raspberry-Pi-Slack-Hack.html</link>
+        <guid isPermaLink="true">/2017/07/21/DigDogEat-Dashbutton-Raspberry-Pi-Slack-Hack.html</guid>
+        
+        <category>projects</category>
+        
+        <category>IoT</category>
+        
+        <category>raspberry</category>
+        
+        
+      </item>
     
       <item>
         <title>Blog Setup: Jekyll + Github Pages</title>
