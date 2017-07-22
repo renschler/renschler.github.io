@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Jul 2017 18:18:15 -0700</pubDate>
-    <lastBuildDate>Fri, 21 Jul 2017 18:18:15 -0700</lastBuildDate>
+    <pubDate>Fri, 21 Jul 2017 18:19:36 -0700</pubDate>
+    <lastBuildDate>Fri, 21 Jul 2017 18:19:36 -0700</lastBuildDate>
     <generator>Jekyll v3.4.5</generator>
     
       <item>
@@ -203,7 +203,7 @@ sudo tcpdump ether host b4:7c:9c:3a:00:d4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://medium.com/@ecaron/why-i-stopped-hacking-the-amazon-dash-button-and-learned-to-solder-84386a38bbd1&quot;&gt;Why I stopped hacking the amazon dash button and learned how to solder&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.hackster.io/noelportugal/ifttt-smart-button-e11841&quot;&gt;IFTTT Smart Button&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.stavros.io/posts/emergency-food-button/?print&quot;&gt;Emergency Food Button&lt;/a&gt; (lol):
+  &lt;li&gt;&lt;a href=&quot;https://www.stavros.io/posts/emergency-food-button/?print&quot;&gt;Emergency Food Button&lt;/a&gt;:
     &lt;blockquote&gt;
       &lt;p&gt;From the first time I saw the Amazon dash button, I was impressed by its simplicity, and thought that it, or something like it at around the same price point, would be very useful. Unfortunately, it’s not open at all, and the more open alternatives are still not very open and cost at least seven times as much. Therefore, the reasonable thing for me to do is to sink a few thousand dollars’ worth of my time into making one myself!&lt;/p&gt;
     &lt;/blockquote&gt;
