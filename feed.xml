@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Aug 2017 14:09:36 -0700</pubDate>
-    <lastBuildDate>Tue, 08 Aug 2017 14:09:36 -0700</lastBuildDate>
+    <pubDate>Tue, 08 Aug 2017 14:17:32 -0700</pubDate>
+    <lastBuildDate>Tue, 08 Aug 2017 14:17:32 -0700</lastBuildDate>
     <generator>Jekyll v3.4.5</generator>
     
       <item>
@@ -94,6 +94,11 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;“First you make your habits, and then your habits make you”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;on Abraham Lincoln:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/images/lincoln.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
