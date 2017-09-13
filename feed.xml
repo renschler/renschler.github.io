@@ -6,13 +6,13 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Sep 2017 10:28:53 -0700</pubDate>
-    <lastBuildDate>Sat, 02 Sep 2017 10:28:53 -0700</lastBuildDate>
+    <pubDate>Tue, 12 Sep 2017 20:13:11 -0500</pubDate>
+    <lastBuildDate>Tue, 12 Sep 2017 20:13:11 -0500</lastBuildDate>
     <generator>Jekyll v3.4.5</generator>
     
       <item>
         <title>Quotes: reminders, wisdom, motivation</title>
-        <description>&lt;p&gt;&lt;em&gt;Last updated: 9/2/17&lt;/em&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;em&gt;Last updated: 9/12/17&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;I like to clip information I find insightful. Below is a subset made up of reminders: wisdom I struggle to follow and motivational quotes. This list will change.&lt;/p&gt;
 
@@ -31,6 +31,9 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;“Success comes from doing, not declaring.” - &lt;a href=&quot;https://twitter.com/sivers&quot;&gt;@sivers&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“It doesn’t get any easier, you just get faster.” - Greg LeMond&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;“Success is the ability to go from failure to failure with enthusiasm!”&lt;/p&gt;
@@ -105,7 +108,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Tue, 08 Aug 2017 00:00:00 -0700</pubDate>
+        <pubDate>Tue, 08 Aug 2017 00:00:00 -0500</pubDate>
         <link>/2017/08/08/Quotes-reminders-wisdom-motivation.html</link>
         <guid isPermaLink="true">/2017/08/08/Quotes-reminders-wisdom-motivation.html</guid>
         
@@ -328,7 +331,7 @@ sudo tcpdump ether host b4:7c:9c:3a:00:d4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt
 
 &lt;h3 id=&quot;thanks-for-reading&quot;&gt;Thanks for reading!&lt;/h3&gt;
 </description>
-        <pubDate>Fri, 21 Jul 2017 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 21 Jul 2017 00:00:00 -0500</pubDate>
         <link>/2017/07/21/DigDogEat-Dashbutton-Raspberry-Pi-Slack-Hack.html</link>
         <guid isPermaLink="true">/2017/07/21/DigDogEat-Dashbutton-Raspberry-Pi-Slack-Hack.html</guid>
         
@@ -391,7 +394,7 @@ tags:
 &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;publishB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;cd ~/Documents/Blog/jekyll/renschler.github.io.raw; jekyll build;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\c&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;p -r _site/* ~/Documents/Blog/jekyll/renschler.github.io;cd ~/Documents/Blog/jekyll/renschler.github.io;git add .;git commit -am 'Latest build.';git push&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>Mon, 17 Jul 2017 00:00:00 -0700</pubDate>
+        <pubDate>Mon, 17 Jul 2017 00:00:00 -0500</pubDate>
         <link>/2017/07/17/Blog-Setup-Jekyll-Github-Pages.html</link>
         <guid isPermaLink="true">/2017/07/17/Blog-Setup-Jekyll-Github-Pages.html</guid>
         
@@ -418,7 +421,7 @@ tags:
 
 &lt;p&gt;For the record it wasn’t a total flop. We sent it to our Moms and they liked it.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 26 Oct 2015 00:00:00 -0700</pubDate>
+        <pubDate>Mon, 26 Oct 2015 00:00:00 -0500</pubDate>
         <link>/2015/10/26/Glomp-Attack-rails-app-for-sending-gifs.html</link>
         <guid isPermaLink="true">/2015/10/26/Glomp-Attack-rails-app-for-sending-gifs.html</guid>
         
@@ -455,7 +458,7 @@ tags:
 
 &lt;p&gt;The app was written in Objective C, it uses google maps, and our intersection database is hosted on Parse.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 26 Jan 2015 00:00:00 -0800</pubDate>
+        <pubDate>Mon, 26 Jan 2015 00:00:00 -0600</pubDate>
         <link>/2015/01/26/Hail-Yeah-NYC-iOS-app-for-hailing-cabs.html</link>
         <guid isPermaLink="true">/2015/01/26/Hail-Yeah-NYC-iOS-app-for-hailing-cabs.html</guid>
         
@@ -493,7 +496,7 @@ tags:
 
 &lt;p&gt;Reference: M. Chiang, P. Hande, T. Lan, and C.W. Tan, “Power control for cellular networks”, &lt;em&gt;Foundation and Trends in Networking&lt;/em&gt;, vol. 2, no. 4, pp. 381-533, July 2008.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 26 Oct 2014 00:00:00 -0700</pubDate>
+        <pubDate>Sun, 26 Oct 2014 00:00:00 -0500</pubDate>
         <link>/2014/10/26/Visualizing-distributed-power-control-d3.html</link>
         <guid isPermaLink="true">/2014/10/26/Visualizing-distributed-power-control-d3.html</guid>
         
@@ -526,7 +529,7 @@ tags:
 
 &lt;p&gt;Radiation Model Source Code: &lt;a href=&quot;https://github.com/renschler/radiationmodel&quot;&gt;github.com/renschler/radiationmodel&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 14 Sep 2014 00:00:00 -0700</pubDate>
+        <pubDate>Sun, 14 Sep 2014 00:00:00 -0500</pubDate>
         <link>/2014/09/14/Visualizing-US-County-Commuter-Flows-Radiation-Model-d3.html</link>
         <guid isPermaLink="true">/2014/09/14/Visualizing-US-County-Commuter-Flows-Radiation-Model-d3.html</guid>
         
