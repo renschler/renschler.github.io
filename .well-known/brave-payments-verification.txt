@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: renschler.github.io
+Token: f225604d5c8388486fddf3adb12599d64ab48716e0b90d575360a168046db936
