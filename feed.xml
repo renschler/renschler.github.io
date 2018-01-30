@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Jan 2018 08:06:34 -0800</pubDate>
-    <lastBuildDate>Sat, 06 Jan 2018 08:06:34 -0800</lastBuildDate>
+    <pubDate>Tue, 30 Jan 2018 10:53:58 -0800</pubDate>
+    <lastBuildDate>Tue, 30 Jan 2018 10:53:58 -0800</lastBuildDate>
     <generator>Jekyll v3.4.5</generator>
     
       <item>
@@ -177,8 +177,8 @@ git config --global core.editor emacs
 git config --list
 
 &lt;span class=&quot;c&quot;&gt;# clone rest of setup commands from my public repo&lt;/span&gt;
-git clone https://github.com/renschler/public_setups.git
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;public_setups
+git clone https://github.com/renschler/dash_setups.git
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;dash_setups
 
 &lt;span class=&quot;c&quot;&gt;# run rest of setup commands&lt;/span&gt;
 ./pi_setup_script_2.sh
@@ -186,9 +186,9 @@ git clone https://github.com/renschler/public_setups.git
 &lt;span class=&quot;c&quot;&gt;# run the setup commands for this dash button project&lt;/span&gt;
 ./dash_button_setup.sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;The scripts will install git, install emacs (a text editor), change various environment settings, and then install the python libraries you need for this project. You can review all the code here: &lt;a href=&quot;https://github.com/renschler/public_setups&quot;&gt;https://github.com/renschler/public_setups&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The scripts will install git, install emacs (a text editor), change various environment settings, and then install the python libraries you need for this project. You can review all the code here: &lt;a href=&quot;https://github.com/renschler/dash_setups&quot;&gt;https://github.com/renschler/dash_setups&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;If you don’t care for emacs you can comment out those lines. If you want to check it out &lt;a href=&quot;https://github.com/renschler/public_setups/blob/master/COS%20217%20Emacs%20Cheat%20Sheet.pdf&quot;&gt;here’s the emacs tutorial&lt;/a&gt; I used to get started in college. It provides documentation for the &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; file included in my setups repository.&lt;/p&gt;
+&lt;p&gt;If you don’t care for emacs you can comment out those lines. If you want to check it out &lt;a href=&quot;https://github.com/renschler/dash_setups/blob/master/COS%20217%20Emacs%20Cheat%20Sheet.pdf&quot;&gt;here’s the emacs tutorial&lt;/a&gt; I used to get started in college. It provides documentation for the &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; file included in my setups repository.&lt;/p&gt;
 
 &lt;p&gt;Lastly I added the following line to my laptop’s &lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_profile&lt;/code&gt;, I use this convention for connecting to other machines that have harder to remember ssh commands.&lt;/p&gt;
 
