@@ -2,128 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Patrick Renschler</title>
-    <description>Patrick Renschler's blog
+    <description>Patrick Renschler&apos;s blog
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Mar 2018 12:52:56 -0700</pubDate>
-    <lastBuildDate>Thu, 29 Mar 2018 12:52:56 -0700</lastBuildDate>
-    <generator>Jekyll v3.4.5</generator>
-    
-      <item>
-        <title>Quotes: reminders, wisdom, motivation</title>
-        <description>&lt;p&gt;&lt;em&gt;Last updated: 3/29/18&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;“There is nothing so useless as doing efficiently that which should not be done at all.” - Peter Drucker&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“To find a worthy mate, be worthy of a worthy mate.” - Charlie Munger&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Bad news doesn’t get better with time.” - &lt;a href=&quot;https://twitter.com/ben97574&quot;&gt;@ben97574&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Twenty years from now you will be more disappointed by the things you didn’t do that by the ones you did. So throw off the bowlines, sail away from the safe harbor, catch the trade winds in your sails. Explore. Dream. Discover.” - Mark Twain&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“My 1 repeated learning in life: &lt;em&gt;There Are No Adults&lt;/em&gt;. Everyone’s making it up as they go along. Figure it out yourself, and do it.” - &lt;a href=&quot;https://twitter.com/naval&quot;&gt;@naval&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Success comes from doing, not declaring.” - &lt;a href=&quot;https://twitter.com/sivers&quot;&gt;@sivers&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“It doesn’t get any easier, you just get faster.” - Greg LeMond&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“You get paid for being right first, and to be first, you can’t wait for consensus.” - &lt;a href=&quot;https://twitter.com/naval&quot;&gt;@naval&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“All writing advice, or creative advice can be boiled down to one three-word sentence: &lt;em&gt;Ass in chair&lt;/em&gt;.” - Chris Jones (esquire)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“An entrepreneur without drive is just unemployed.” - &lt;a href=&quot;https://twitter.com/naval&quot;&gt;@naval&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“No one’s coming to save you from yourself.” - via &lt;a href=&quot;https://twitter.com/AmuseChimp&quot;&gt;@amusechimp&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Don’t dilute yourself with people who don’t work as hard as you.” - via &lt;a href=&quot;https://twitter.com/kwuchu&quot;&gt;@kwuchu&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“The key to thriving in our position is endurance. The key to endurance is training on the steepest hill you can find.” - Walter Payton to Roger Craig&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Most decisions should probably be made with somewhere around 70% of the information you wish you had. If you wait for 90%, in most cases, you’re probably being slow. Plus, either way, you need to be good at quickly recognizing and correcting bad decisions. If you’re good at course correcting, being wrong may be less costly than you think, whereas being slow is going to be expensive for sure.” - Jeff Bezos&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“People pay an enormous price to avoid mild embarrassment.” - on Amos Tversky via &lt;a href=&quot;https://twitter.com/sknthla&quot;&gt;@sknthla&lt;/a&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/embarassment.PNG&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://twitter.com/naval&quot;&gt;@naval&lt;/a&gt;’s laws via &lt;a href=&quot;https://twitter.com/tferriss&quot;&gt;@timferris&lt;/a&gt;’ &lt;a href=&quot;http://amzn.to/2vh8VnB&quot;&gt;Tools of Titans&lt;/a&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/navals_laws.PNG&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Simple heuristic: If you are evenly split on a difficult decision, take the path that’s more painful in the short term.” - &lt;a href=&quot;https://twitter.com/naval&quot;&gt;@naval&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Honest feedback, the most valuable and all-too-rare form of non-financial reward that just keeps paying dividends over time.” - via &lt;a href=&quot;https://twitter.com/scottbelsky&quot;&gt;@scottbelsky&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/wminshew&quot;&gt;@wminshew&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“The pain cave is a place where we take stock of our courage and ask ourselves how much we are willing to give for the goals we’ve laid out.” - &lt;a href=&quot;https://www.outsideonline.com/2192176/why-are-runners-obsessed-with-pain-cave&quot;&gt;“Why are Runners Obsessed with the Pain Cave”&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“One of the cruelest things you can do to another person is pretend you care about them more than you really do.” - Douglas Coupland via &lt;a href=&quot;https://twitter.com/booknerdfession&quot;&gt;@booknerdfession&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/michael_nielsen&quot;&gt;@michael_nielsen&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Stop trying to use your speech to get what you want. You don’t necessarily know what you want. Instead, try to articulate what you believe to be true as carefully as possible. Then, accept the outcome.” - &lt;a href=&quot;https://twitter.com/jordanbpeterson&quot;&gt;@jordanbpeterson&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;seen &lt;a href=&quot;https://twitter.com/Princeton&quot;&gt;@princeton&lt;/a&gt;:&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/start_writing.PNG&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“The organ that limits endurance performance is the brain… What endurance athletes must endure above all is not actual effort, but perception of effort… There is no experience like that of driving yourself to the point of wanting to give up and then not giving up.” - Excerpts from &lt;a href=&quot;https://twitter.com/mattfitwriter&quot;&gt;@mattfitwriter&lt;/a&gt;’s &lt;a href=&quot;http://amzn.to/2zEEuqH&quot;&gt;How Bad Do You Want It?&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“First you make your habits, and then your habits make you”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/lincoln.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Perfect is the enemy of done.”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“A man is revealed by how he treats the powerless.”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Reputation comes from consistency.”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Habits over choices. Reduce friction.”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“GOOD.” - &lt;a href=&quot;https://twitter.com/ben97574&quot;&gt;@ben97574&lt;/a&gt; &lt;a href=&quot;https://twitter.com/jockowillink&quot;&gt;@jockowillink&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“Be deliberate with your time and focus. Before every task ask - ‘is this worth my attention?’”&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 08 Aug 2017 00:00:00 -0700</pubDate>
-        <link>/2017/08/08/Quotes-reminders-wisdom-motivation.html</link>
-        <guid isPermaLink="true">/2017/08/08/Quotes-reminders-wisdom-motivation.html</guid>
-        
-        <category>workflow</category>
-        
-        
-      </item>
+    <pubDate>Wed, 19 Mar 2025 17:54:40 -0700</pubDate>
+    <lastBuildDate>Wed, 19 Mar 2025 17:54:40 -0700</lastBuildDate>
+    <generator>Jekyll v3.10.0</generator>
     
       <item>
         <title>DidDogEat? Dashbutton to Raspberry Pi to Slack</title>
@@ -165,43 +50,49 @@
 
 &lt;p&gt;Next I moved onto the instructions starting here: &lt;a href=&quot;https://learn.adafruit.com/raspberry-pi-zero-creation/text-file-editing&quot;&gt;Raspberry Pi Zero Headless Quick Start Text File Editing&lt;/a&gt;. Once I was able to SSH in, I changed the default password and then ran the following:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;## contents from setup_script_1.sh ##&lt;/span&gt;
-sudo apt update
-sudo apt upgrade -y
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;## contents from setup_script_1.sh&lt;/span&gt;
 
-sudo apt install git -y
-sudo apt install emacs -y
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;git &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;emacs &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;# set up git, modify for yourself&lt;/span&gt;
-git config --global user.name &lt;span class=&quot;s2&quot;&gt;&quot;Patrick Renschler&quot;&lt;/span&gt;
-git config --global user.email myemail@email.com
-git config --global core.editor emacs
-git config --list
+
+git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.name &lt;span class=&quot;s2&quot;&gt;&quot;Patrick Renschler&quot;&lt;/span&gt;
+git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.email myemail@email.com
+git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; core.editor emacs
+git config &lt;span class=&quot;nt&quot;&gt;--list&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;# clone rest of setup commands from my public repo&lt;/span&gt;
+
 git clone https://github.com/renschler/dash_setups.git
 &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;dash_setups
 
 &lt;span class=&quot;c&quot;&gt;# run rest of setup commands&lt;/span&gt;
+
 ./pi_setup_script_2.sh
 
 &lt;span class=&quot;c&quot;&gt;# run the setup commands for this dash button project&lt;/span&gt;
+
 ./dash_button_setup.sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;The scripts will install git, install emacs (a text editor), change various environment settings, and then install the python libraries you need for this project. You can review all the code here: &lt;a href=&quot;https://github.com/renschler/dash_setups&quot;&gt;https://github.com/renschler/dash_setups&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;If you don’t care for emacs you can comment out those lines. If you want to check it out &lt;a href=&quot;https://github.com/renschler/dash_setups/blob/master/COS%20217%20Emacs%20Cheat%20Sheet.pdf&quot;&gt;here’s the emacs tutorial&lt;/a&gt; I used to get started in college. It provides documentation for the &lt;code class=&quot;highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; file included in my setups repository.&lt;/p&gt;
+&lt;p&gt;If you don’t care for emacs you can comment out those lines. If you want to check it out &lt;a href=&quot;https://github.com/renschler/dash_setups/blob/master/COS%20217%20Emacs%20Cheat%20Sheet.pdf&quot;&gt;here’s the emacs tutorial&lt;/a&gt; I used to get started in college. It provides documentation for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.emacs&lt;/code&gt; file included in my setups repository.&lt;/p&gt;
 
-&lt;p&gt;Lastly I added the following line to my laptop’s &lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_profile&lt;/code&gt;, I use this convention for connecting to other machines that have harder to remember ssh commands.&lt;/p&gt;
+&lt;p&gt;Lastly I added the following line to my laptop’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bash_profile&lt;/code&gt;, I use this convention for connecting to other machines that have harder to remember ssh commands.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# pi zero ssh&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;pi-z-ssh&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ssh pi@raspberrypi.local'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;pi-z-ssh&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;ssh pi@raspberrypi.local&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h3 id=&quot;dash-button-setup&quot;&gt;Dash button setup&lt;/h3&gt;
 
 &lt;p&gt;There’s two things you need to do here: get the MAC address of your button, and then configure it for your home wifi network.&lt;/p&gt;
 
-&lt;p&gt;Press the dash button and hold it down until the blue light comes on. On your laptop or phone, look for a wifi network named “Amazon ConfigureMe” and then join it. Open up a browser and go to &lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.0.1&lt;/code&gt;. This should show you a page that has your button’s MAC address which you’ll need to write down.&lt;/p&gt;
+&lt;p&gt;Press the dash button and hold it down until the blue light comes on. On your laptop or phone, look for a wifi network named “Amazon ConfigureMe” and then join it. Open up a browser and go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;192.168.0.1&lt;/code&gt;. This should show you a page that has your button’s MAC address which you’ll need to write down.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/MAC_ADDRESS.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
 
@@ -222,7 +113,8 @@ git clone https://github.com/renschler/dash_setups.git
 &lt;p&gt;SSH back into your pi, and run this command substituting in the MAC address of your dash button.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Modify with the mac address of your dash button&lt;/span&gt;
-sudo tcpdump ether host b4:7c:9c:3a:00:d4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;tcpdump ether host b4:7c:9c:3a:00:d4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Click your dash button and you should see some packets! Hit CTRL-C to stop tcpdump.&lt;/p&gt;
 
@@ -232,28 +124,29 @@ sudo tcpdump ether host b4:7c:9c:3a:00:d4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt
 
 &lt;h3 id=&quot;python&quot;&gt;Python&lt;/h3&gt;
 
-&lt;p&gt;Now we will use the python library &lt;code class=&quot;highlighter-rouge&quot;&gt;scapy&lt;/code&gt; to listen for the click of your dash button (like tcpdump), and then print “Hello world” when it is detected.&lt;/p&gt;
+&lt;p&gt;Now we will use the python library &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scapy&lt;/code&gt; to listen for the click of your dash button (like tcpdump), and then print “Hello world” when it is detected.&lt;/p&gt;
 
-&lt;p&gt;Create a new file called &lt;code class=&quot;highlighter-rouge&quot;&gt;dashbutton.py&lt;/code&gt; and paste this into it:&lt;/p&gt;
+&lt;p&gt;Create a new file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dashbutton.py&lt;/code&gt; and paste this into it:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scapy.all&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scapy.all&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; \&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;feed_dog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
 
-&lt;span class=&quot;c&quot;&gt;# substitute in your mac address&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# substitute in your mac address
+&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;dashset&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b4:7c:9c:3a:00:d4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;dashdict&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b4:7c:9c:3a:00:d4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feed_dog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dhcp_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;DHCP packet from: &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;dashdict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]()&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;DHCP packet from: &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dashdict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
 
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sniff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dhcp_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lfilter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;haslayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DHCP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dashset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sniff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dhcp_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lfilter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;haslayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DHCP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dashset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Start the program with &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo python dashbutton.py&lt;/code&gt;, click your button, you should get a Hello, World!&lt;/p&gt;
+&lt;p&gt;Start the program with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo python dashbutton.py&lt;/code&gt;, click your button, you should get a Hello, World!&lt;/p&gt;
 
 &lt;h3 id=&quot;adding-slack&quot;&gt;Adding slack&lt;/h3&gt;
 
@@ -267,54 +160,57 @@ sudo tcpdump ether host b4:7c:9c:3a:00:d4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt
 
 &lt;p&gt;&lt;img src=&quot;/images/PermissionScopes.png&quot; alt=&quot;Photo&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;On the same page, at the top, click the green button that says “Install App to Team”. When you’ve finished that you’ll land on the page with an &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth Access Token&lt;/code&gt; displayed. You will need this to send messages from our python program.&lt;/p&gt;
+&lt;p&gt;On the same page, at the top, click the green button that says “Install App to Team”. When you’ve finished that you’ll land on the page with an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OAuth Access Token&lt;/code&gt; displayed. You will need this to send messages from our python program.&lt;/p&gt;
 
-&lt;p&gt;Reopen the &lt;code class=&quot;highlighter-rouge&quot;&gt;dashbutton.py&lt;/code&gt; program, and modify it so that it matches what’s below:&lt;/p&gt;
+&lt;p&gt;Reopen the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dashbutton.py&lt;/code&gt; program, and modify it so that it matches what’s below:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scapy.all&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scapy.all&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; \&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;slackclient&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SlackClient&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;slack_token&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;environ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SLACK_BOT_TOKEN&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;slack_token&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;environ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SLACK_BOT_TOKEN&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SlackClient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slack_token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;feed_dog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-		&lt;span class=&quot;s&quot;&gt;&quot;chat.postMessage&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#dogfood&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The dog just got food! :tada:&quot;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&quot;chat.postMessage&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#dogfood&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The dog just got food! :tada:&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
 
-&lt;span class=&quot;c&quot;&gt;# substitute in your mac address                                                                                                                                                                                   &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# substitute in your mac address
+&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;dashset&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b4:7c:9c:3a:00:d4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;dashdict&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b4:7c:9c:3a:00:d4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feed_dog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dhcp_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;DHCP packet from: &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;dashdict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;DHCP packet from: &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dashdict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pkt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
 
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sniff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dhcp_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lfilter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;haslayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DHCP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dashset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sniff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dhcp_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lfilter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;haslayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DHCP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ether&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dashset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Assuming you have a channel named &lt;code class=&quot;highlighter-rouge&quot;&gt;#dogfood&lt;/code&gt;, you can start this program with&lt;/p&gt;
+&lt;p&gt;Assuming you have a channel named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#dogfood&lt;/code&gt;, you can start this program with&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo &lt;span class=&quot;nv&quot;&gt;SLACK_BOT_TOKEN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PASTE-IN-YOUR-TOKEN&quot;&lt;/span&gt; python dashbutton.py&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;SLACK_BOT_TOKEN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PASTE-IN-YOUR-TOKEN&quot;&lt;/span&gt; python dashbutton.py&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;When you click the dash button you should see a message show up from your app in the #dogfood channel!&lt;/p&gt;
 
 &lt;p&gt;The very last thing I did was schedule a cron job that will start this program everytime the raspberry pi reboots.&lt;/p&gt;
 
-&lt;p&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;crontab -e&lt;/code&gt; into the terminal, and then add the following line, as it’s own line, at the bottom of the file. Do not preface it with a #.&lt;/p&gt;
+&lt;p&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crontab -e&lt;/code&gt; into the terminal, and then add the following line, as it’s own line, at the bottom of the file. Do not preface it with a #.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;@reboot &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;; sudo &lt;span class=&quot;nv&quot;&gt;SLACK_BOT_TOKEN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PASTE-IN-YOUR-TOKEN&quot;&lt;/span&gt; python dashbutton.py&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;@reboot &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;SLACK_BOT_TOKEN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PASTE-IN-YOUR-TOKEN&quot;&lt;/span&gt; python dashbutton.py&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Then leave one empty line below that command, before the end of the file, and you are good to exit. Although, depending on where the &lt;code class=&quot;highlighter-rouge&quot;&gt;dashbutton.py&lt;/code&gt; file is located on your pi, you may have to change that command so it has the right path.&lt;/p&gt;
+&lt;p&gt;Then leave one empty line below that command, before the end of the file, and you are good to exit. Although, depending on where the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dashbutton.py&lt;/code&gt; file is located on your pi, you may have to change that command so it has the right path.&lt;/p&gt;
 
-&lt;p&gt;But ya that’s it! If you ever want to support more dash buttons on your network, you can add additional functions and MAC Addresses to the &lt;code class=&quot;highlighter-rouge&quot;&gt;dashdict&lt;/code&gt; &amp;amp; &lt;code class=&quot;highlighter-rouge&quot;&gt;dashset&lt;/code&gt; objects.&lt;/p&gt;
+&lt;p&gt;But ya that’s it! If you ever want to support more dash buttons on your network, you can add additional functions and MAC Addresses to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dashdict&lt;/code&gt; &amp;amp; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dashset&lt;/code&gt; objects.&lt;/p&gt;
 
 &lt;h3 id=&quot;related-but-different&quot;&gt;Related but different&lt;/h3&gt;
+
 &lt;h4 id=&quot;links&quot;&gt;Links&lt;/h4&gt;
+
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://medium.com/@ecaron/why-i-stopped-hacking-the-amazon-dash-button-and-learned-to-solder-84386a38bbd1&quot;&gt;Why I stopped hacking the amazon dash button and learned how to solder&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.hackster.io/noelportugal/ifttt-smart-button-e11841&quot;&gt;IFTTT Smart Button&lt;/a&gt;&lt;/li&gt;
@@ -349,6 +245,8 @@ sudo tcpdump ether host b4:7c:9c:3a:00:d4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt
         
         <category>raspberry</category>
         
+        <category>archive</category>
+        
         
       </item>
     
@@ -357,49 +255,59 @@ sudo tcpdump ether host b4:7c:9c:3a:00:d4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt
         <description>&lt;p&gt;My blog is back up and running. Here are some notes. The &lt;a href=&quot;https://jekyllrb.com/docs/home/&quot;&gt;Jekyll documentation&lt;/a&gt; is probably a better reference.&lt;/p&gt;
 
 &lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
+
 &lt;p&gt;I followed the instructions here: &lt;a href=&quot;https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/&quot;&gt;setting up your GitHub Pages site locally with Jekyll&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;layout-and-style&quot;&gt;Layout and Style&lt;/h3&gt;
+
 &lt;p&gt;I wanted to make some tweaks to the minima theme so I followed the instructions here on &lt;a href=&quot;http://jekyllrb.com/docs/themes/#overriding-theme-defaults&quot;&gt;overriding theme defaults&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;/h3&gt;
+
 &lt;p&gt;I wanted to use a plugin that would automatically generate a page for each tag where I could see all the posts that had been assigned that tag. Github pages &lt;a href=&quot;https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/&quot;&gt;does not support many plugins&lt;/a&gt; (&lt;a href=&quot;https://github.com/jekyll/jekyll/issues/325&quot;&gt;more on that&lt;/a&gt;) but you can get around this issue by building your site locally and only pushing the static files. To do that I followed the instructions here: &lt;a href=&quot;http://charliepark.org/jekyll-with-plugins/&quot;&gt;Jekyll + Plugins + Github + You&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Then I went ahead and &lt;a href=&quot;http://charliepark.org/tags-in-jekyll/&quot;&gt;installed the tagging plugin&lt;/a&gt;. In order for it to work, I had to remove &lt;code class=&quot;highlighter-rouge&quot;&gt;group: :jekyll_plugins&lt;/code&gt; from my Gemfile (&lt;a href=&quot;https://jekyllrb.com/docs/plugins/#installing-a-plugin&quot;&gt;see “installing a plugin” Jekyll docs&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Then I went ahead and &lt;a href=&quot;http://charliepark.org/tags-in-jekyll/&quot;&gt;installed the tagging plugin&lt;/a&gt;. In order for it to work, I had to remove &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;group: :jekyll_plugins&lt;/code&gt; from my Gemfile (&lt;a href=&quot;https://jekyllrb.com/docs/plugins/#installing-a-plugin&quot;&gt;see “installing a plugin” Jekyll docs&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;I also wanted to be able to embed youtube clips into my posts, so I used this plugin: &lt;a href=&quot;https://github.com/pibby/jekyll-youtube&quot;&gt;jekyll-youtube&lt;/a&gt;. Again you won’t have issues with Github’s plugin restrictions if you take the “build locally” approach mentioned above. I also found a solution that lets you &lt;a href=&quot;http://www.adamwadeharris.com/how-to-easily-embed-youtube-videos-in-jekyll-sites-without-a-plugin/&quot;&gt;embed youtube videos in jekyll without a plugin&lt;/a&gt; but didn’t use it because I had already done it the other way.&lt;/p&gt;
 
 &lt;p&gt;I haven’t done this yet, but I’d like to check out &lt;a href=&quot;https://cwoebker.com/posts/latex-math-magic&quot;&gt;using latex in jekyll&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;workflow&quot;&gt;Workflow&lt;/h3&gt;
-&lt;p&gt;Here’s what I added to my &lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_profile&lt;/code&gt;, you’ll need to change it for your directory structure. It assumes you are using the set up described in &lt;a href=&quot;http://charliepark.org/jekyll-with-plugins/&quot;&gt;Jekyll + Plugins + Github + You&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here’s what I added to my &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bash_profile&lt;/code&gt;, you’ll need to change it for your directory structure. It assumes you are using the set up described in &lt;a href=&quot;http://charliepark.org/jekyll-with-plugins/&quot;&gt;Jekyll + Plugins + Github + You&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;########## jekyll blog aliases / functions #################&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'open -a &quot;Sublime Text 2&quot;'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;open -a &quot;Sublime Text 2&quot;&apos;&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;# create a new draft function&lt;/span&gt;
+
 new_draft &lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Documents/Blog/jekyll/renschler.github.io.raw;
-    touch _drafts/&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;date +%Y-%m-%d&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;-&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.md;
-    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;---
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Documents/Blog/jekyll/renschler.github.io.raw&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;touch&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\_&lt;/span&gt;drafts/&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; +%Y-%m-%d&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;-&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.md&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;---
 layout: post
 title: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
-date: &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;date +%Y-%m-%d&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
+date: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; +%Y-%m-%d&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
 comments: true
 tags:
+
 - draft
----&quot;&lt;/span&gt; &amp;gt;&amp;gt; _drafts/&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;date +%Y-%m-%d&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;-&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.md;
-    st _drafts/&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;date +%Y-%m-%d&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;-&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.md;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  ---&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\_&lt;/span&gt;drafts/&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; +%Y-%m-%d&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;-&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.md&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    st _drafts/&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; +%Y-%m-%d&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;-&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.md&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
 &lt;span class=&quot;c&quot;&gt;# create a new draft&lt;/span&gt;
+
 &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;draft&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;new_draft&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#Usage: draft TitleOfPost&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;# preview blog with drafts&lt;/span&gt;
+
 &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;previewB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;cd ~/Documents/Blog/jekyll/renschler.github.io.raw; jekyll build --drafts; jekyll serve --drafts&quot;&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;# push latest blog&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;publishB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;cd ~/Documents/Blog/jekyll/renschler.github.io.raw; jekyll build;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\c&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;p -r _site/* ~/Documents/Blog/jekyll/renschler.github.io;cd ~/Documents/Blog/jekyll/renschler.github.io;git add .;git commit -am 'Latest build.';git push&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;publishB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;cd ~/Documents/Blog/jekyll/renschler.github.io.raw; jekyll build;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\c&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;p -r &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\_&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;site/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\*&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; ~/Documents/Blog/jekyll/renschler.github.io;cd ~/Documents/Blog/jekyll/renschler.github.io;git add .;git commit -am &apos;Latest build.&apos;;git push&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
         <pubDate>Mon, 17 Jul 2017 00:00:00 -0700</pubDate>
@@ -409,6 +317,8 @@ tags:
         <category>blog</category>
         
         <category>workflow</category>
+        
+        <category>archive</category>
         
         
       </item>
@@ -438,6 +348,8 @@ tags:
         <category>rails</category>
         
         <category>twilio</category>
+        
+        <category>archive</category>
         
         
       </item>
@@ -473,6 +385,8 @@ tags:
         <category>iOS</category>
         
         <category>projects</category>
+        
+        <category>archive</category>
         
         
       </item>
@@ -514,6 +428,8 @@ tags:
         
         <category>projects</category>
         
+        <category>archive</category>
+        
         
       </item>
     
@@ -544,6 +460,8 @@ tags:
         <category>d3</category>
         
         <category>projects</category>
+        
+        <category>archive</category>
         
         
       </item>

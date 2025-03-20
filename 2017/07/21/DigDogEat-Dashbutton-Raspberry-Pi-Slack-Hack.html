@@ -18,57 +18,66 @@
   <body>
 
     <header class="site-header">
-
   <div class="wrapper">
-
     <a class="site-title" href="/">Patrick Renschler</a>
 
     <nav class="site-nav">
-      <a href="#" class="menu-icon">
+      <!-- <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+          <path
+            fill="#424242"
+            d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"
+          />
+          <path
+            fill="#424242"
+            d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"
+          />
+          <path
+            fill="#424242"
+            d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"
+          />
         </svg>
-      </a>
+      </a> -->
 
       <div class="trigger">
         
-          
+        <!-- 
           <a class="page-link" href="/about/">About</a>
-          
+           -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
         
-          
+        <!--  -->
+        
+        <!--  -->
+        
+        <!--  -->
         
       </div>
     </nav>
-
   </div>
-
 </header>
 
 
@@ -88,6 +97,8 @@
     		<a  style="color:#828282" class="tag_list_link" href="/tag/IoT">IoT</a> |
     	
     		<a  style="color:#828282" class="tag_list_link" href="/tag/raspberry">raspberry</a> |
+    	
+    		<a  style="color:#828282" class="tag_list_link" href="/tag/archive">archive</a> |
     	
     </p>
   </header>
@@ -131,43 +142,49 @@
 
 <p>Next I moved onto the instructions starting here: <a href="https://learn.adafruit.com/raspberry-pi-zero-creation/text-file-editing">Raspberry Pi Zero Headless Quick Start Text File Editing</a>. Once I was able to SSH in, I changed the default password and then ran the following:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">## contents from setup_script_1.sh ##</span>
-sudo apt update
-sudo apt upgrade -y
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">## contents from setup_script_1.sh</span>
 
-sudo apt install git -y
-sudo apt install emacs -y
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt upgrade <span class="nt">-y</span>
+
+<span class="nb">sudo </span>apt <span class="nb">install </span>git <span class="nt">-y</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>emacs <span class="nt">-y</span>
 
 <span class="c"># set up git, modify for yourself</span>
-git config --global user.name <span class="s2">"Patrick Renschler"</span>
-git config --global user.email myemail@email.com
-git config --global core.editor emacs
-git config --list
+
+git config <span class="nt">--global</span> user.name <span class="s2">"Patrick Renschler"</span>
+git config <span class="nt">--global</span> user.email myemail@email.com
+git config <span class="nt">--global</span> core.editor emacs
+git config <span class="nt">--list</span>
 
 <span class="c"># clone rest of setup commands from my public repo</span>
+
 git clone https://github.com/renschler/dash_setups.git
 <span class="nb">cd </span>dash_setups
 
 <span class="c"># run rest of setup commands</span>
+
 ./pi_setup_script_2.sh
 
 <span class="c"># run the setup commands for this dash button project</span>
+
 ./dash_button_setup.sh</code></pre></figure>
 
 <p>The scripts will install git, install emacs (a text editor), change various environment settings, and then install the python libraries you need for this project. You can review all the code here: <a href="https://github.com/renschler/dash_setups">https://github.com/renschler/dash_setups</a>.</p>
 
-<p>If you don’t care for emacs you can comment out those lines. If you want to check it out <a href="https://github.com/renschler/dash_setups/blob/master/COS%20217%20Emacs%20Cheat%20Sheet.pdf">here’s the emacs tutorial</a> I used to get started in college. It provides documentation for the <code class="highlighter-rouge">.emacs</code> file included in my setups repository.</p>
+<p>If you don’t care for emacs you can comment out those lines. If you want to check it out <a href="https://github.com/renschler/dash_setups/blob/master/COS%20217%20Emacs%20Cheat%20Sheet.pdf">here’s the emacs tutorial</a> I used to get started in college. It provides documentation for the <code class="language-plaintext highlighter-rouge">.emacs</code> file included in my setups repository.</p>
 
-<p>Lastly I added the following line to my laptop’s <code class="highlighter-rouge">.bash_profile</code>, I use this convention for connecting to other machines that have harder to remember ssh commands.</p>
+<p>Lastly I added the following line to my laptop’s <code class="language-plaintext highlighter-rouge">.bash_profile</code>, I use this convention for connecting to other machines that have harder to remember ssh commands.</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># pi zero ssh</span>
+
 <span class="nb">alias </span>pi-z-ssh<span class="o">=</span><span class="s1">'ssh pi@raspberrypi.local'</span></code></pre></figure>
 
 <h3 id="dash-button-setup">Dash button setup</h3>
 
 <p>There’s two things you need to do here: get the MAC address of your button, and then configure it for your home wifi network.</p>
 
-<p>Press the dash button and hold it down until the blue light comes on. On your laptop or phone, look for a wifi network named “Amazon ConfigureMe” and then join it. Open up a browser and go to <code class="highlighter-rouge">192.168.0.1</code>. This should show you a page that has your button’s MAC address which you’ll need to write down.</p>
+<p>Press the dash button and hold it down until the blue light comes on. On your laptop or phone, look for a wifi network named “Amazon ConfigureMe” and then join it. Open up a browser and go to <code class="language-plaintext highlighter-rouge">192.168.0.1</code>. This should show you a page that has your button’s MAC address which you’ll need to write down.</p>
 
 <p><img src="/images/MAC_ADDRESS.png" alt="Photo" /></p>
 
@@ -188,7 +205,8 @@ git clone https://github.com/renschler/dash_setups.git
 <p>SSH back into your pi, and run this command substituting in the MAC address of your dash button.</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Modify with the mac address of your dash button</span>
-sudo tcpdump ether host b4:7c:9c:3a:00:d4</code></pre></figure>
+
+<span class="nb">sudo </span>tcpdump ether host b4:7c:9c:3a:00:d4</code></pre></figure>
 
 <p>Click your dash button and you should see some packets! Hit CTRL-C to stop tcpdump.</p>
 
@@ -198,28 +216,29 @@ sudo tcpdump ether host b4:7c:9c:3a:00:d4</code></pre></figure>
 
 <h3 id="python">Python</h3>
 
-<p>Now we will use the python library <code class="highlighter-rouge">scapy</code> to listen for the click of your dash button (like tcpdump), and then print “Hello world” when it is detected.</p>
+<p>Now we will use the python library <code class="language-plaintext highlighter-rouge">scapy</code> to listen for the click of your dash button (like tcpdump), and then print “Hello world” when it is detected.</p>
 
-<p>Create a new file called <code class="highlighter-rouge">dashbutton.py</code> and paste this into it:</p>
+<p>Create a new file called <code class="language-plaintext highlighter-rouge">dashbutton.py</code> and paste this into it:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="o">*</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> \<span class="o">*</span>
 
 <span class="k">def</span> <span class="nf">feed_dog</span><span class="p">():</span>
-	<span class="k">print</span> <span class="s">"Hello, world!"</span>
-	<span class="k">return</span>
+<span class="k">print</span> <span class="s">"Hello, world!"</span>
+<span class="k">return</span>
 
-<span class="c"># substitute in your mac address</span>
+<span class="c1"># substitute in your mac address
+</span>
 <span class="n">dashset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s">"b4:7c:9c:3a:00:d4"</span><span class="p">])</span>
 <span class="n">dashdict</span> <span class="o">=</span> <span class="p">{</span><span class="s">"b4:7c:9c:3a:00:d4"</span><span class="p">:</span><span class="n">feed_dog</span><span class="p">}</span>
 
 <span class="k">def</span> <span class="nf">dhcp_display</span><span class="p">(</span><span class="n">pkt</span><span class="p">):</span>
-	<span class="k">print</span> <span class="s">"DHCP packet from: "</span><span class="o">+</span> <span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span>
-	<span class="n">dashdict</span><span class="p">[</span><span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span><span class="p">]()</span>
-	<span class="k">return</span>
+<span class="k">print</span> <span class="s">"DHCP packet from: "</span><span class="o">+</span> <span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">].</span><span class="n">src</span>
+<span class="n">dashdict</span><span class="p">[</span><span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">].</span><span class="n">src</span><span class="p">]()</span>
+<span class="k">return</span>
 
-<span class="k">print</span> <span class="n">sniff</span><span class="p">(</span><span class="n">prn</span><span class="o">=</span><span class="n">dhcp_display</span><span class="p">,</span> <span class="n">lfilter</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">haslayer</span><span class="p">(</span><span class="n">DHCP</span><span class="p">)</span> <span class="ow">and</span> <span class="n">x</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span> <span class="ow">in</span> <span class="n">dashset</span><span class="p">,</span> <span class="n">store</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code></pre></figure>
+<span class="k">print</span> <span class="n">sniff</span><span class="p">(</span><span class="n">prn</span><span class="o">=</span><span class="n">dhcp_display</span><span class="p">,</span> <span class="n">lfilter</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">.</span><span class="n">haslayer</span><span class="p">(</span><span class="n">DHCP</span><span class="p">)</span> <span class="ow">and</span> <span class="n">x</span><span class="p">[</span><span class="n">Ether</span><span class="p">].</span><span class="n">src</span> <span class="ow">in</span> <span class="n">dashset</span><span class="p">,</span> <span class="n">store</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code></pre></figure>
 
-<p>Start the program with <code class="highlighter-rouge">sudo python dashbutton.py</code>, click your button, you should get a Hello, World!</p>
+<p>Start the program with <code class="language-plaintext highlighter-rouge">sudo python dashbutton.py</code>, click your button, you should get a Hello, World!</p>
 
 <h3 id="adding-slack">Adding slack</h3>
 
@@ -233,54 +252,57 @@ sudo tcpdump ether host b4:7c:9c:3a:00:d4</code></pre></figure>
 
 <p><img src="/images/PermissionScopes.png" alt="Photo" /></p>
 
-<p>On the same page, at the top, click the green button that says “Install App to Team”. When you’ve finished that you’ll land on the page with an <code class="highlighter-rouge">OAuth Access Token</code> displayed. You will need this to send messages from our python program.</p>
+<p>On the same page, at the top, click the green button that says “Install App to Team”. When you’ve finished that you’ll land on the page with an <code class="language-plaintext highlighter-rouge">OAuth Access Token</code> displayed. You will need this to send messages from our python program.</p>
 
-<p>Reopen the <code class="highlighter-rouge">dashbutton.py</code> program, and modify it so that it matches what’s below:</p>
+<p>Reopen the <code class="language-plaintext highlighter-rouge">dashbutton.py</code> program, and modify it so that it matches what’s below:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> <span class="o">*</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">scapy.all</span> <span class="kn">import</span> \<span class="o">*</span>
 <span class="kn">from</span> <span class="nn">slackclient</span> <span class="kn">import</span> <span class="n">SlackClient</span>
 <span class="kn">import</span> <span class="nn">os</span>
 
-<span class="n">slack_token</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s">"SLACK_BOT_TOKEN"</span><span class="p">]</span>
+<span class="n">slack_token</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">environ</span><span class="p">[</span><span class="s">"SLACK_BOT_TOKEN"</span><span class="p">]</span>
 <span class="n">sc</span> <span class="o">=</span> <span class="n">SlackClient</span><span class="p">(</span><span class="n">slack_token</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">feed_dog</span><span class="p">():</span>
-	<span class="n">sc</span><span class="o">.</span><span class="n">api_call</span><span class="p">(</span>
-		<span class="s">"chat.postMessage"</span><span class="p">,</span>
-		<span class="n">channel</span><span class="o">=</span><span class="s">"#dogfood"</span><span class="p">,</span>
-		<span class="n">text</span><span class="o">=</span><span class="s">"The dog just got food! :tada:"</span>
-		<span class="p">)</span>
-	<span class="k">return</span>
+<span class="n">sc</span><span class="p">.</span><span class="n">api_call</span><span class="p">(</span>
+<span class="s">"chat.postMessage"</span><span class="p">,</span>
+<span class="n">channel</span><span class="o">=</span><span class="s">"#dogfood"</span><span class="p">,</span>
+<span class="n">text</span><span class="o">=</span><span class="s">"The dog just got food! :tada:"</span>
+<span class="p">)</span>
+<span class="k">return</span>
 
-<span class="c"># substitute in your mac address                                                                                                                                                                                   </span>
+<span class="c1"># substitute in your mac address
+</span>
 <span class="n">dashset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s">"b4:7c:9c:3a:00:d4"</span><span class="p">])</span>
 <span class="n">dashdict</span> <span class="o">=</span> <span class="p">{</span><span class="s">"b4:7c:9c:3a:00:d4"</span><span class="p">:</span><span class="n">feed_dog</span><span class="p">}</span>
 
 <span class="k">def</span> <span class="nf">dhcp_display</span><span class="p">(</span><span class="n">pkt</span><span class="p">):</span>
-    <span class="k">print</span> <span class="s">"DHCP packet from: "</span><span class="o">+</span> <span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span>
-    <span class="n">dashdict</span><span class="p">[</span><span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span><span class="p">]()</span>
-    <span class="k">return</span>
+<span class="k">print</span> <span class="s">"DHCP packet from: "</span><span class="o">+</span> <span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">].</span><span class="n">src</span>
+<span class="n">dashdict</span><span class="p">[</span><span class="n">pkt</span><span class="p">[</span><span class="n">Ether</span><span class="p">].</span><span class="n">src</span><span class="p">]()</span>
+<span class="k">return</span>
 
-<span class="k">print</span> <span class="n">sniff</span><span class="p">(</span><span class="n">prn</span><span class="o">=</span><span class="n">dhcp_display</span><span class="p">,</span> <span class="n">lfilter</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">haslayer</span><span class="p">(</span><span class="n">DHCP</span><span class="p">)</span> <span class="ow">and</span> <span class="n">x</span><span class="p">[</span><span class="n">Ether</span><span class="p">]</span><span class="o">.</span><span class="n">src</span> <span class="ow">in</span> <span class="n">dashset</span><span class="p">,</span> <span class="n">store</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code></pre></figure>
+<span class="k">print</span> <span class="n">sniff</span><span class="p">(</span><span class="n">prn</span><span class="o">=</span><span class="n">dhcp_display</span><span class="p">,</span> <span class="n">lfilter</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">.</span><span class="n">haslayer</span><span class="p">(</span><span class="n">DHCP</span><span class="p">)</span> <span class="ow">and</span> <span class="n">x</span><span class="p">[</span><span class="n">Ether</span><span class="p">].</span><span class="n">src</span> <span class="ow">in</span> <span class="n">dashset</span><span class="p">,</span> <span class="n">store</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code></pre></figure>
 
-<p>Assuming you have a channel named <code class="highlighter-rouge">#dogfood</code>, you can start this program with</p>
+<p>Assuming you have a channel named <code class="language-plaintext highlighter-rouge">#dogfood</code>, you can start this program with</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">sudo <span class="nv">SLACK_BOT_TOKEN</span><span class="o">=</span><span class="s2">"PASTE-IN-YOUR-TOKEN"</span> python dashbutton.py</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span><span class="nv">SLACK_BOT_TOKEN</span><span class="o">=</span><span class="s2">"PASTE-IN-YOUR-TOKEN"</span> python dashbutton.py</code></pre></figure>
 
 <p>When you click the dash button you should see a message show up from your app in the #dogfood channel!</p>
 
 <p>The very last thing I did was schedule a cron job that will start this program everytime the raspberry pi reboots.</p>
 
-<p>Type <code class="highlighter-rouge">crontab -e</code> into the terminal, and then add the following line, as it’s own line, at the bottom of the file. Do not preface it with a #.</p>
+<p>Type <code class="language-plaintext highlighter-rouge">crontab -e</code> into the terminal, and then add the following line, as it’s own line, at the bottom of the file. Do not preface it with a #.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">@reboot <span class="nb">cd</span>; sudo <span class="nv">SLACK_BOT_TOKEN</span><span class="o">=</span><span class="s2">"PASTE-IN-YOUR-TOKEN"</span> python dashbutton.py</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">@reboot <span class="nb">cd</span><span class="p">;</span> <span class="nb">sudo </span><span class="nv">SLACK_BOT_TOKEN</span><span class="o">=</span><span class="s2">"PASTE-IN-YOUR-TOKEN"</span> python dashbutton.py</code></pre></figure>
 
-<p>Then leave one empty line below that command, before the end of the file, and you are good to exit. Although, depending on where the <code class="highlighter-rouge">dashbutton.py</code> file is located on your pi, you may have to change that command so it has the right path.</p>
+<p>Then leave one empty line below that command, before the end of the file, and you are good to exit. Although, depending on where the <code class="language-plaintext highlighter-rouge">dashbutton.py</code> file is located on your pi, you may have to change that command so it has the right path.</p>
 
-<p>But ya that’s it! If you ever want to support more dash buttons on your network, you can add additional functions and MAC Addresses to the <code class="highlighter-rouge">dashdict</code> &amp; <code class="highlighter-rouge">dashset</code> objects.</p>
+<p>But ya that’s it! If you ever want to support more dash buttons on your network, you can add additional functions and MAC Addresses to the <code class="language-plaintext highlighter-rouge">dashdict</code> &amp; <code class="language-plaintext highlighter-rouge">dashset</code> objects.</p>
 
 <h3 id="related-but-different">Related but different</h3>
+
 <h4 id="links">Links</h4>
+
 <ul>
   <li><a href="https://medium.com/@ecaron/why-i-stopped-hacking-the-amazon-dash-button-and-learned-to-solder-84386a38bbd1">Why I stopped hacking the amazon dash button and learned how to solder</a></li>
   <li><a href="https://www.hackster.io/noelportugal/ifttt-smart-button-e11841">IFTTT Smart Button</a></li>
@@ -340,92 +362,103 @@ sudo tcpdump ether host b4:7c:9c:3a:00:d4</code></pre></figure>
     </div>
 
     <footer class="site-footer">
-
   <div class="wrapper">
-
     <!--<h2 class="footer-heading">Patrick Renschler</h2>-->
 
     <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
+      <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>
-            <img width="16px" height="16px" style="border-radius:10%" src="/images/shortwhale_logo.png"/>
-            <a href="http://www.shortwhale.com/p_renschler">
-              <span class="username">email</span>
-            </a>
-          </li>
-
           
           <li>
-            <img width="16px" height="16px" style="border-radius:10%" src="/images/Twitter_Logo.png" alt="Twitter"/>
-            <a href="https://twitter.com/renschler">
+            ✉️
+            <a href="mailto:grids.imply_6o@icloud.com">
+              <span class="username">contact</span>
+            </a>
+          </li>
+           
+          <li>
+            <img
+              width="16px"
+              height="16px"
+              style="border-radius: 10%"
+              src="/images/Twitter_Logo.png"
+              alt="Twitter"
+            />
+            <a href="https://x.com/renschler">
               <span class="username">@renschler</span>
             </a>
           </li>
-          
-
-          
-          <li>
-            <img width="16px" height="16px" style="border-radius:10%" src="/images/AngelList_Black.png" alt="AngelList"/>
-            <a href="https://angel.co/renschler">
-              <span class="username">angelList</span>
-            </a>
-          </li>
-          
-
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-2">
-        <ul class="social-media-list">
-          
-
-          
+           
           <li>
             <style>
-              .strava-badge- {height: 16px; }
-              .strava-badge- img { visibility: hidden; height: 16px; }
-              .strava-badge-follow { height: 16px; width: 16px; background: url(/images/echelon-sprite-16.png) no-repeat 0 0; }
+              .strava-badge- {
+                height: 16px;
+              }
+              .strava-badge- img {
+                visibility: hidden;
+                height: 16px;
+              }
+              .strava-badge-follow {
+                height: 16px;
+                width: 16px;
+                background: url(/images/echelon-sprite-16.png) no-repeat 0 0;
+              }
             </style>
             <span class="strava-badge- strava-badge-follow">
-              <img width="16px" height="16px" src="/images/echelon-sprite-16.png" alt="Strava" />
+              <img
+                width="16px"
+                height="16px"
+                src="/images/echelon-sprite-16.png"
+                alt="Strava"
+              />
             </span>
             <a href="http://strava.com/athletes/10063857/badge">
               <span class="username">strava</span>
             </a>
           </li>
-          
-
-          
+          <!--  
           <li>
-            <img width="16px" height="16px" style="border-radius:10%" src="/images/blockstack.jpg"/>
-            <a href="https://onename.com/renschler">
-              <span class="username">onename</span>
+            <img
+              width="16px"
+              height="16px"
+              style="border-radius: 10%"
+              src="/images/AngelList_Black.png"
+              alt="AngelList"
+            />
+            <a href="https://angel.co/renschler">
+              <span class="username">angelList</span>
             </a>
           </li>
-          
-
-          <li>
-            <img width="16px" height="16px" src="/images/RecurseCenter.ico"/>
-            <a href="https://www.recurse.com/scout/click?t=23fd2353e4c12b9aef0190f99df6c3cd">
-              <span class="username">recurse center!</span>
-            </a>
-            <div height="16px" width="16px" class="rc-scout"></div>
-          </li>
-
+           -->
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
+      <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-          
-        </ul>
+          <!-- 
+          <li>
+            <a href="https://github.com/renschler">
+              <span class="icon icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path
+                    fill="#828282"
+                    d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"
+                  />
+                </svg>
+              </span>
 
+              <span class="username">renschler</span>
+            </a>
+          </li> -->
+          <!--  -->
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <ul class="social-media-list"></ul>
       </div>
     </div>
-
   </div>
-
 </footer>
 
   </body>
