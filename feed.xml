@@ -6,9 +6,68 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Mar 2025 11:52:45 -0700</pubDate>
-    <lastBuildDate>Fri, 21 Mar 2025 11:52:45 -0700</lastBuildDate>
+    <pubDate>Fri, 21 Mar 2025 13:12:36 -0700</pubDate>
+    <lastBuildDate>Fri, 21 Mar 2025 13:12:36 -0700</lastBuildDate>
     <generator>Jekyll v3.10.0</generator>
+    
+      <item>
+        <title>Sliding bike hooks</title>
+        <description>&lt;p&gt;I recently setup a sliding hook system for our garage bicycle wall.&lt;/p&gt;
+
+&lt;p&gt;We used to have hooks mounted directly into the wall but it wasn’t always easy to remove the bike you wanted.&lt;/p&gt;
+
+&lt;p&gt;I like this setup more because it’s easy to make space when I want to grab a specific bike or put one back.&lt;/p&gt;
+
+&lt;div style=&quot;display: flex; gap: 10px; margin-bottom: 20px;&quot;&gt;
+  &lt;div style=&quot;flex: 1;&quot;&gt;
+    &lt;img src=&quot;/images/hooks1.jpeg&quot; alt=&quot;Bike hooks view 1&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;flex: 1;&quot;&gt;
+    &lt;img src=&quot;/images/hooks2.jpeg&quot; alt=&quot;Bike hooks view 2&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;parts&quot;&gt;Parts:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;hooks from &lt;a href=&quot;https://shop.gear-blocks.com/&quot;&gt;gear-blocks&lt;/a&gt; they work with standard 1-5/8” strut that hardware stores have&lt;/li&gt;
+  &lt;li&gt;12GA 10ft strut 1-5/8” &lt;a href=&quot;https://www.homedepot.com/p/NEWHOUSE-ELECTRIC-12-Gauge-1-5-8-in-x-10-ft-Strut-Channel-Silver-SC12-10-EG/320422816&quot;&gt;home depot&lt;/a&gt;; only used 5ft of it&lt;/li&gt;
+  &lt;li&gt;4x heavy duty shelf hangers; 16in x 10in &lt;a href=&quot;https://www.homedepot.com/p/Everbilt-16-in-x-10-in-White-Heavy-Duty-Shelf-Bracket-14826/202895664&quot;&gt;home depot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;bolts/nuts/washers to mount hangers to wall and to mount strut to hangers
+    &lt;ul&gt;
+      &lt;li&gt;for each hanger-to-strut:
+        &lt;ul&gt;
+          &lt;li&gt;1x: 3/8” × 1” hex bolt&lt;/li&gt;
+          &lt;li&gt;2x: 3/8” fender washers (&amp;gt;1” outer diameter)&lt;/li&gt;
+          &lt;li&gt;1x: 3/8” nylock nut&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;for each hanger-to-stud (w/ 3 holes per hanger)
+        &lt;ul&gt;
+          &lt;li&gt;3x: 1/4” x 3” lag screws (I was mounting through 3/4” plywood into studs, you might need different lengths depending on your setup)&lt;/li&gt;
+          &lt;li&gt;3x: 1/4” fender washers (&amp;gt;1” outer diameter)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;inspiration&quot;&gt;Inspiration:&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://shop.gear-blocks.com/about-the-ultimate-unistrut-sliding-hook-bike-storage-rack/&quot;&gt;gear blocks guide&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/_ufYDG6LLYo&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
+&lt;div class=&quot;video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/_deob4L4AEY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
+</description>
+        <pubDate>Fri, 21 Mar 2025 00:00:00 -0700</pubDate>
+        <link>/2025/03/21/sliding-bike-hooks.html</link>
+        <guid isPermaLink="true">/2025/03/21/sliding-bike-hooks.html</guid>
+        
+        <category>home</category>
+        
+        <category>cycling</category>
+        
+        
+      </item>
     
       <item>
         <title>DidDogEat? Dashbutton to Raspberry Pi to Slack</title>
