@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Mar 2025 13:20:26 -0700</pubDate>
-    <lastBuildDate>Fri, 21 Mar 2025 13:20:26 -0700</lastBuildDate>
+    <pubDate>Fri, 06 Jun 2025 10:41:03 -0700</pubDate>
+    <lastBuildDate>Fri, 06 Jun 2025 10:41:03 -0700</lastBuildDate>
     <generator>Jekyll v3.10.0</generator>
     
       <item>
@@ -30,7 +30,7 @@
 &lt;h3 id=&quot;parts&quot;&gt;Parts:&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;hooks from &lt;a href=&quot;https://shop.gear-blocks.com/&quot;&gt;gear-blocks&lt;/a&gt; they work with standard 1-5/8” strut that hardware stores have&lt;/li&gt;
+  &lt;li&gt;hooks from &lt;a href=&quot;https://shop.gear-blocks.com/&quot;&gt;gear-blocks&lt;/a&gt; they work with standard 1-5/8” strut that hardware stores have (&lt;em&gt;see updates at end&lt;/em&gt;)&lt;/li&gt;
   &lt;li&gt;12GA 10ft strut 1-5/8” &lt;a href=&quot;https://www.homedepot.com/p/NEWHOUSE-ELECTRIC-12-Gauge-1-5-8-in-x-10-ft-Strut-Channel-Silver-SC12-10-EG/320422816&quot;&gt;home depot&lt;/a&gt;; only used 5ft of it&lt;/li&gt;
   &lt;li&gt;4x heavy duty shelf hangers; 16in x 10in &lt;a href=&quot;https://www.homedepot.com/p/Everbilt-16-in-x-10-in-White-Heavy-Duty-Shelf-Bracket-14826/202895664&quot;&gt;home depot&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;bolts/nuts/washers to mount hangers to wall and to mount strut to hangers
@@ -51,6 +51,21 @@
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&quot;-updates-20250606-&quot;&gt;** Updates 2025/06/06 **&lt;/h3&gt;
+
+&lt;p&gt;It’s only been a few months since I set things up and the lining on the swivel hooks from GearBlocks are already failing, so my rims are resting directly on metal.&lt;/p&gt;
+
+&lt;p&gt;I reached out to GearBlocks and they said it’s a known issue and they recommed using 1/2” ID PVC tube or handlebar tape to provide cushion.&lt;/p&gt;
+
+&lt;div style=&quot;display: flex; gap: 10px; margin-bottom: 20px;&quot;&gt;
+  &lt;div style=&quot;flex: 1;&quot;&gt;
+    &lt;img src=&quot;/images/hook_fail.jpg&quot; alt=&quot;Bike hooks with peeling cushion&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;flex: 1;&quot;&gt;
+    &lt;img src=&quot;/images/hook_extra_cushion.png&quot; alt=&quot;Bike hook wrapped with tubing&quot; style=&quot;width: 100%;&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;inspiration&quot;&gt;Inspiration:&lt;/h3&gt;
 
