@@ -6,9 +6,59 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 Jun 2025 11:45:45 -0700</pubDate>
-    <lastBuildDate>Fri, 06 Jun 2025 11:45:45 -0700</lastBuildDate>
+    <pubDate>Mon, 07 Jul 2025 12:05:43 -0700</pubDate>
+    <lastBuildDate>Mon, 07 Jul 2025 12:05:43 -0700</lastBuildDate>
     <generator>Jekyll v3.10.0</generator>
+    
+      <item>
+        <title>eShiftMetrics Garmin Connect IQ Datafield</title>
+        <description>&lt;p&gt;Earlier this year I built up a Santa Cruz Stigmata gravel bike with SRAM AXS electronic shifting (it’s sweet, will have to do a separate write up).&lt;/p&gt;
+
+&lt;p&gt;The eletronic shifters are ANT+ compatible so they can communicate with your bike computer and tell it what gear you are in. This data gets written to your activity recording and then SRAM has a cool webapp where you can review your gear usage post-ride.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/images/sram1.png&quot; alt=&quot;SRAM gear usage chart&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/images/sram2.png&quot; alt=&quot;SRAM gear analysis&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;But it’s another place you have to look, and it requires you to send &lt;em&gt;all&lt;/em&gt; of your Garmin activities to SRAM.&lt;/p&gt;
+
+&lt;p&gt;I decided to whip up a Connect IQ datafield that would provide similar gear usage analytics but let me review the data in Garmin - where I’m already looking after my rides. The usage stats are calculated on device during the ride and then written to the activity recording in &lt;a href=&quot;https://developer.garmin.com/fit/cookbook/developer-data/&quot;&gt;developer fit fields&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I was planning on using Garmin’s monetization program to try and sell a premium version, but unfortunately their monetization program is &lt;em&gt;not&lt;/em&gt; compatible with cycling computers (the main target device for my datafield) so I used Stripe and built my own licensing system.&lt;/p&gt;
+
+&lt;p&gt;Here’s the stack:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Connect IQ datafield (monkey c)&lt;/li&gt;
+  &lt;li&gt;Payments &amp;amp; license distribution (stripe + aws lambda + aws ses + aws dynamodb)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://eshiftmetrics.com&quot;&gt;Documentation site&lt;/a&gt; (eleventy.js on cloudflare pages)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As of 6/7/2025 Garmin hasn’t approved it yet in the &lt;a href=&quot;https://apps.garmin.com/apps/b3637cd4-9ba8-405e-9e26-ec9d62c980f9&quot;&gt;Connect IQ store but it should be live soon!&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/1Vdd_Rx2zR0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
+</description>
+        <pubDate>Mon, 07 Jul 2025 00:00:00 -0700</pubDate>
+        <link>/2025/07/07/eshiftmetrics-garmin-connect-iq-datafield.html</link>
+        <guid isPermaLink="true">/2025/07/07/eshiftmetrics-garmin-connect-iq-datafield.html</guid>
+        
+        <category>cycling</category>
+        
+        <category>projects</category>
+        
+        
+      </item>
     
       <item>
         <title>Sliding bike hooks garage storage</title>
