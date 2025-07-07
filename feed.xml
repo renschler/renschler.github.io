@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Jul 2025 12:05:43 -0700</pubDate>
-    <lastBuildDate>Mon, 07 Jul 2025 12:05:43 -0700</lastBuildDate>
+    <pubDate>Mon, 07 Jul 2025 12:28:37 -0700</pubDate>
+    <lastBuildDate>Mon, 07 Jul 2025 12:28:37 -0700</lastBuildDate>
     <generator>Jekyll v3.10.0</generator>
     
       <item>
@@ -45,7 +45,7 @@
   &lt;li&gt;&lt;a href=&quot;https://eshiftmetrics.com&quot;&gt;Documentation site&lt;/a&gt; (eleventy.js on cloudflare pages)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;As of 6/7/2025 Garmin hasn’t approved it yet in the &lt;a href=&quot;https://apps.garmin.com/apps/b3637cd4-9ba8-405e-9e26-ec9d62c980f9&quot;&gt;Connect IQ store but it should be live soon!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The app was approved today and should be live soon in the &lt;a href=&quot;https://apps.garmin.com/apps/b3637cd4-9ba8-405e-9e26-ec9d62c980f9&quot;&gt;Connect IQ store!&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;video&quot;&gt;&lt;figure&gt;&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/1Vdd_Rx2zR0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;/div&gt;
 </description>
