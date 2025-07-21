@@ -474,3 +474,24 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+table {
+  width: 100%;
+  margin: 1.5em 0;
+  border-collapse: collapse;
+  font-size: 16px;
+  line-height: 1.5; }
+
+th, td {
+  border: 1px solid #e8e8e8;
+  padding: 0.5em 1em;
+  text-align: left;
+  vertical-align: top; }
+
+th {
+  background-color: white;
+  font-weight: bold;
+  color: #111; }
+
+tr:nth-child(even) {
+  background-color: #fafafa; }
