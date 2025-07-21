@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Jul 2025 15:42:44 -0700</pubDate>
-    <lastBuildDate>Mon, 21 Jul 2025 15:42:44 -0700</lastBuildDate>
+    <pubDate>Mon, 21 Jul 2025 15:45:58 -0700</pubDate>
+    <lastBuildDate>Mon, 21 Jul 2025 15:45:58 -0700</lastBuildDate>
     <generator>Jekyll v3.10.0</generator>
     
       <item>
@@ -149,12 +149,6 @@
 &lt;p&gt;The eletronic shifters are ANT+ compatible so they can communicate with your bike computer and tell it what gear you are in. This data gets written to your activity recording and then SRAM has a cool webapp where you can review your gear usage post-ride.&lt;/p&gt;
 
 &lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;img src=&quot;/images/sram1.png&quot; alt=&quot;SRAM gear usage chart&quot; /&gt;&lt;/td&gt;
