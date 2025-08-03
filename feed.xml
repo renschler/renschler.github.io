@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Aug 2025 23:09:56 -0700</pubDate>
-    <lastBuildDate>Fri, 01 Aug 2025 23:09:56 -0700</lastBuildDate>
+    <pubDate>Sun, 03 Aug 2025 11:04:37 -0700</pubDate>
+    <lastBuildDate>Sun, 03 Aug 2025 11:04:37 -0700</lastBuildDate>
     <generator>Jekyll v3.10.0</generator>
     
       <item>
@@ -160,7 +160,7 @@
     
       <item>
         <title>eShiftMetrics: electronic shifting gear usage</title>
-        <description>&lt;p&gt;Earlier this year I built up a Santa Cruz Stigmata gravel bike with SRAM AXS electronic shifting (it’s sweet, will have to do a separate write up).&lt;/p&gt;
+        <description>&lt;p&gt;Earlier this year I built up a Santa Cruz Stigmata gravel bike with SRAM AXS electronic shifting (it’s sweet, &lt;a href=&quot;https://renschler.github.io/2025/07/10/santacruz-stigmata-v4-build.html&quot;&gt;I posted a write up here&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;The eletronic shifters are ANT+ compatible so they can communicate with your bike computer and tell it what gear you are in. This data gets written to your activity recording and then SRAM has a cool webapp where you can review your gear usage post-ride.&lt;/p&gt;
 
